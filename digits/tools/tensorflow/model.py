@@ -155,7 +155,7 @@ class Model(object):
                         losses += ops.get_collection(ops.GraphKeys.REGULARIZATION_LOSSES, scope=None)
                         tower_loss = tf.add_n(losses, name='loss')
 
-                        self.summaries.append(tf.scalar_summary(tower_loss.op.name, tower_loss))
+                        self.summaries.append(tf.summary.scalar(tower_loss.op.name, tower_loss))
 
                     # Reuse the variables in this scope for the next tower/device
                     tf.get_variable_scope().reuse_variables()
@@ -216,7 +216,7 @@ class Model(object):
         if not len(self.summaries):
             logging.error("No summaries defined. Please define at least one summary.")
             exit(-1)
-        return tf.merge_summary(self.summaries)
+        return tf.summary.merge(self.summaries)
 
     @model_property
     def global_step(self):
@@ -231,7 +231,7 @@ class Model(object):
         #  define it entirely in tf ops, instead of a placeholder and feeding.
         with tf.device('/cpu:0'):
             lr = tf.placeholder(tf.float32, shape=[], name='learning_rate')
-            self.summaries.append(tf.scalar_summary('lr', lr))
+            self.summaries.append(tf.summary.scalar('lr', lr))
             return lr
 
     @model_property

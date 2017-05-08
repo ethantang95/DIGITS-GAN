@@ -43,7 +43,8 @@ def classification_loss(pred, y):
     """
     Definition of the loss for regular classification
     """
-    ssoftmax = tf.nn.sparse_softmax_cross_entropy_with_logits(pred, y, name='cross_entropy_single')
+    print(str(y))
+    ssoftmax = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=pred, labels=y, name='cross_entropy_single')
     return tf.reduce_mean(ssoftmax, name='cross_entropy_batch')
 
 
