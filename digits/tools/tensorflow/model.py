@@ -54,7 +54,7 @@ def average_gradients(tower_grads):
                 # Append on a 'tower' dimension which we will average over below.
                 grads.append(expanded_g)
             # Average over the 'tower' dimension.
-            grad = tf.concat(0, grads)
+            grad = tf.concat(grads, 0)
             grad = tf.reduce_mean(grad, 0)
             # Keep in mind that the Variables are redundant because they are shared
             # across towers. So .. we will just return the first tower's pointer to
