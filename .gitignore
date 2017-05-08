@@ -17,3 +17,6 @@ TAGS
 /build/
 /dist/
 *.egg-info/
+
+# intellij files
+.idea/workspace.xml
