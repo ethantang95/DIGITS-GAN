@@ -54,13 +54,13 @@ def average_gradients(tower_grads):
                 # Append on a 'tower' dimension which we will average over below.
                 grads.append(expanded_g)
             # Average over the 'tower' dimension.
-            grad = tf.concat(grads, 0)
-            grad = tf.reduce_mean(grad, 0)
+            grads_transformed = tf.concat(grads, 0)
+            grads_transformed = tf.reduce_mean(grads_transformed, 0)
             # Keep in mind that the Variables are redundant because they are shared
             # across towers. So .. we will just return the first tower's pointer to
             # the Variable.
             v = grad_and_vars[0][1]
-            grad_and_var = (grad, v)
+            grad_and_var = (grads_transformed, v)
             average_grads.append(grad_and_var)
         return average_grads
 
@@ -119,9 +119,9 @@ class Model(object):
         else:
             with tf.name_scope('parallelize'):
                 # Split them up
-                batch_x_split = tf.split(0, len(available_devices), self.dataloader.batch_x, name='split_batch')
+                batch_x_split = tf.split(self.dataloader.batch_x, len(available_devices), 0, name='split_batch')
                 if self.stage != digits.STAGE_INF:  # Has no labels
-                    batch_y_split = tf.split(0, len(available_devices), self.dataloader.batch_y, name='split_batch')
+                    batch_y_split = tf.split( self.dataloader.batch_y, len(available_devices), 0, name='split_batch')
 
         # Run the user model through the build_model function that should be filled in
         grad_towers = []
