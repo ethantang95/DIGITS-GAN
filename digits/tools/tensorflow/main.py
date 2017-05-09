@@ -541,7 +541,7 @@ def main(_):
             load_snapshot(sess, FLAGS.weights, tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES))
 
         # Tensorboard: Merge all the summaries and write them out
-        writer = tf.train.SummaryWriter(os.path.join(FLAGS.summaries_dir, 'tb'), sess.graph)
+        writer = tf.summary.FileWriter(os.path.join(FLAGS.summaries_dir, 'tb'), sess.graph)
 
         # If we are inferencing, only do that.
         if FLAGS.inference_db:
