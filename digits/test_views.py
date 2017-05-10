@@ -144,6 +144,8 @@ class BaseViewsTest(object):
                     job_id, url, rv.status_code)
                 assert job_id in rv.data
                 return status
+            if (time.time() - start) > timeout:
+                print("Job " + job_id + " took too long to finish")
             assert (time.time() - start) < timeout, 'Job took more than %s seconds' % timeout
             time.sleep(polling_period)
 

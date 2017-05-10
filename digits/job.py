@@ -13,10 +13,13 @@ import flask
 from .status import Status, StatusCls
 from digits.config import config_value
 from digits.utils import sizeof_fmt, filesystem as fs
+import logging
 
 # NOTE: Increment this everytime the pickled object changes
 PICKLE_VERSION = 2
 
+
+logger = logging.getLogger('digits.tools.inference')
 
 class Job(StatusCls):
     """
@@ -39,6 +42,7 @@ class Job(StatusCls):
             # Reset this on load
             job._dir = job_dir
             for task in job.tasks:
+                logger.debug("Found " + str(len(job.tasks)) + " tasks to do for job id of " + job_id)
                 task.job_dir = job_dir
                 if isinstance(task, TrainTask):
                     # can't call this until the job_dir is set

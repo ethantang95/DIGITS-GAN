@@ -533,7 +533,7 @@ def main(_):
         saver = tf.train.Saver(vars_to_save, max_to_keep=0, sharded=FLAGS.serving_export)
 
         # Initialize variables
-        init_op = tf.group(tf.initialize_all_variables(), tf.initialize_local_variables())
+        init_op = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
         sess.run(init_op)
 
         # If weights option is set, preload weights from existing models appropriately

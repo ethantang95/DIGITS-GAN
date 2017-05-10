@@ -24,6 +24,7 @@ from digits.utils.lmdbreader import DbReader  # noqa
 
 # Import digits.config before caffe to set the path
 import caffe_pb2  # noqa
+import json
 
 logger = logging.getLogger('digits.tools.inference')
 
@@ -50,28 +51,33 @@ def infer(input_list,
     if jobs_dir == 'none':
         jobs_dir = digits.config.config_value('jobs_dir')
 
+    logger.debug("Using jobs directory " + jobs_dir)
+
     # load model job
     model_dir = os.path.join(jobs_dir, model_id)
+    logger.debug("Using model directory " + model_dir)
     assert os.path.isdir(model_dir), "Model dir %s does not exist" % model_dir
     model = Job.load(model_dir)
 
     # load dataset job
     dataset_dir = os.path.join(jobs_dir, model.dataset_id)
+    logger.debug("Using data set directory " + model_dir)
     assert os.path.isdir(dataset_dir), "Dataset dir %s does not exist" % dataset_dir
     dataset = Job.load(dataset_dir)
     for task in model.tasks:
         task.dataset = dataset
 
     # retrieve snapshot file
-    task = model.train_task()
+    trained_task = model.train_task()
     snapshot_filename = None
     epoch = float(epoch)
-    if epoch == -1 and len(task.snapshots):
+    logger.debug("Found " + str(len(trained_task.snapshots)) + " snapshots")
+    if epoch == -1 and len(trained_task.snapshots):
         # use last epoch
-        epoch = task.snapshots[-1][1]
-        snapshot_filename = task.snapshots[-1][0]
+        epoch = trained_task.snapshots[-1][1]
+        snapshot_filename = trained_task.snapshots[-1][0]
     else:
-        for f, e in task.snapshots:
+        for f, e in trained_task.snapshots:
             if e == epoch:
                 snapshot_filename = f
                 break

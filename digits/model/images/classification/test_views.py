@@ -661,6 +661,7 @@ class BaseTestCreated(BaseViewsTestWithModel):
             # StringIO wrapping is needed to simulate POST file upload.
             image_upload = (StringIO(infile.read()), 'image.png')
 
+        print("task id="+str(self.model_id))
         rv = self.app.post(
             '/models/images/classification/classify_one?job_id=%s' % self.model_id,
             data={
