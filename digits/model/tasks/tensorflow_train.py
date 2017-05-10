@@ -36,6 +36,10 @@ def _bytes_feature(value):
     return tf.train.Feature(bytes_list=tf.train.BytesList(value=[value]))
 
 
+def _float_array_feature(value):
+    return tf.train.Feature(float_list=tf.train.FloatList(value=value))
+
+
 def subprocess_visible_devices(gpus):
     """
     Calculates CUDA_VISIBLE_DEVICES for a subprocess
@@ -134,6 +138,31 @@ class TensorflowTrainTask(TrainTask):
         self.displaying_network = False
         self.temp_unrecognized_output = []
         return True
+
+    @override
+    def get_snapshot(self, epoch=-1, download=False):
+        """
+        return snapshot file for specified epoch
+        """
+        snapshot_filename = None
+
+        if len(self.snapshots) == 0:
+            return "no snapshots"
+
+        if epoch == -1 or not epoch:
+            epoch = self.snapshots[-1][1]
+            snapshot_filename = self.snapshots[-1][0]
+        else:
+            for f, e in self.snapshots:
+                if e == epoch:
+                    snapshot_filename = f
+                    break
+        if not snapshot_filename:
+            raise ValueError('Invalid epoch')
+        if download:
+            snapshot_filename = snapshot_filename + ".data-00000-of-00001"
+
+        return snapshot_filename
 
     @override
     def task_arguments(self, resources, env):
@@ -443,9 +472,11 @@ class TensorflowTrainTask(TrainTask):
         snapshots = []
         for filename in os.listdir(self.job_dir):
             # find models
-            match = re.match(r'%s_(\d+)\.?(\d*)\.ckpt$' % self.snapshot_prefix, filename)
+            match = re.match(r'%s_(\d+)\.?(\d*)\.ckpt\.index$' % self.snapshot_prefix, filename)
             if match:
                 epoch = 0
+                # remove '.index' suffix from filename
+                filename = filename[:-6]
                 if match.group(2) == '':
                     epoch = int(match.group(1))
                 else:
@@ -491,14 +522,14 @@ class TensorflowTrainTask(TrainTask):
         os.close(temp_image_handle)
         if image.ndim < 3:
             image = image[..., np.newaxis]
-        # currently only support 8-bit pixel-like data
-        image = image.astype('uint8')
         writer = tf.python_io.TFRecordWriter(temp_image_path)
+
+        image = image.astype('float')
         record = tf.train.Example(features=tf.train.Features(feature={
             'height': _int64_feature(image.shape[0]),
             'width': _int64_feature(image.shape[1]),
             'depth': _int64_feature(image.shape[2]),
-            'image_raw': _bytes_feature(image.tostring()),
+            'image_raw': _float_array_feature(image.flatten()),
             'label': _int64_feature(0),
             'encoding': _int64_feature(0)}))
         writer.write(record.SerializeToString())
@@ -787,15 +818,14 @@ class TensorflowTrainTask(TrainTask):
                 for image in images:
                     if image.ndim < 3:
                         image = image[..., np.newaxis]
-                    # currently only support 8-bit pixel-like data
-                    image = image.astype('uint8')
+                    image = image.astype('float')
                     temp_image_handle, temp_image_path = tempfile.mkstemp(dir=temp_dir_path, suffix='.tfrecords')
                     writer = tf.python_io.TFRecordWriter(temp_image_path)
                     record = tf.train.Example(features=tf.train.Features(feature={
                         'height': _int64_feature(image.shape[0]),
                         'width': _int64_feature(image.shape[1]),
                         'depth': _int64_feature(image.shape[2]),
-                        'image_raw': _bytes_feature(image.tostring()),
+                        'image_raw': _float_array_feature(image.flatten()),
                         'label': _int64_feature(0),
                         'encoding': _int64_feature(0)}))
                     writer.write(record.SerializeToString())

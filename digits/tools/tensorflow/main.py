@@ -254,8 +254,11 @@ def load_snapshot(sess, weight_path, var_candidates):
     for vt in var_candidates:
         for vm in var_map.keys():
             if vt.name.split(':')[0] == vm:
-                vars_restore.append(vt)
-                logging.info('restoring %s -> %s' % (vm, vt.name))
+                if ("global_step" not in vt.name) and not (vt.name.startswith("train/")):
+                    vars_restore.append(vt)
+                    logging.info('restoring %s -> %s' % (vm, vt.name))
+                else:
+                    logging.info('NOT restoring %s -> %s' % (vm, vt.name))
 
     logging.info('Restoring %s variable ops.' % len(vars_restore))
     tf.train.Saver(vars_restore, max_to_keep=0, sharded=FLAGS.serving_export).restore(sess, weight_path)
@@ -524,7 +527,7 @@ def main(_):
 
         # Saver creation.
         if FLAGS.save_vars == 'all':
-            vars_to_save = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES)
+            vars_to_save = tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES)
         elif FLAGS.save_vars == 'trainable':
             vars_to_save = tf.all_variables()
         else:
@@ -538,7 +541,7 @@ def main(_):
 
         # If weights option is set, preload weights from existing models appropriately
         if FLAGS.weights:
-            load_snapshot(sess, FLAGS.weights, tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES))
+            load_snapshot(sess, FLAGS.weights, tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES))
 
         # Tensorboard: Merge all the summaries and write them out
         writer = tf.summary.FileWriter(os.path.join(FLAGS.summaries_dir, 'tb'), sess.graph)
@@ -611,10 +614,22 @@ def main(_):
 
                     feed_dict = {train_model.learning_rate: lrpolicy.get_learning_rate(step)}
 
-                    _, summary_str, step = sess.run([train_model.train, train_model.summary, train_model.global_step],
-                                                    feed_dict=feed_dict,
-                                                    options=run_options,
-                                                    run_metadata=run_metadata)
+                    if False:
+                        for op in train_model.train:
+                            _, summary_str, step = sess.run([op, train_model.summary, train_model.global_step],
+                                                            feed_dict=feed_dict,
+                                                            options=run_options,
+                                                            run_metadata=run_metadata)
+                    else:
+                        _, summary_str, step = sess.run([train_model.train,
+                                                         train_model.summary,
+                                                         train_model.global_step],
+                                                        feed_dict=feed_dict,
+                                                        options=run_options,
+                                                        run_metadata=run_metadata)
+
+                    # HACK
+                    step = step / len(train_model.train)
 
                     # logging.info(sess.run(queue_size_op)) # DEVELOPMENT: for checking the queue size
 

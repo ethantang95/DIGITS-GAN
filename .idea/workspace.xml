@@ -1,0 +1,1556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c277f6c-f79f-418a-a555-0647b4a318b2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-analogy-form.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-analogy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-dataset-form.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-embeddings.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-encode-list-form.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-encode-list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-loss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-select-image-output.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-set-attributes-form.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/celeba-set-attributes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/create-mnist-generic-dataset.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/create-mnist-model.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/exploring-celeba.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/gan-grid-animated.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-animated.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-chi-square.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-class-sweep.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-classification-dataset.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-encode-image-form.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-encode-image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-encoder-loss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-graph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-inference-form-class-sweep.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-loss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-style-sweep.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-styled-class-sweep-form.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-styled-class-sweep.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/mnist-tb-samples.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/digits/tools/tensorflow/gan_grid.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/digits/tools/tensorflow/gandisplay.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/gan_embeddings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/gan_features.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/network-celebA-encoder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/network-celebA.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/network-mnist-encoder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gan/network-mnist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/question-answering/memn2n.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/MANIFEST.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/digitsDataPluginGan/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/digitsDataPluginGan/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/digitsDataPluginGan/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/digitsDataPluginGan/templates/dataset_template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/digitsDataPluginGan/templates/inference_template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/digitsDataPluginGan/templates/template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/data/gan/setup.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/MANIFEST.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/digitsViewPluginGan/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/digitsViewPluginGan/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/digitsViewPluginGan/templates/config_template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/digitsViewPluginGan/templates/header_template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/digitsViewPluginGan/templates/view_template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/digitsViewPluginGan/view.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/view/gan/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/dataset/views.py" afterPath="$PROJECT_DIR$/digits/dataset/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/extensions/view/imageOutput/config_template.html" afterPath="$PROJECT_DIR$/digits/extensions/view/imageOutput/config_template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/extensions/view/imageOutput/forms.py" afterPath="$PROJECT_DIR$/digits/extensions/view/imageOutput/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/extensions/view/imageOutput/view.py" afterPath="$PROJECT_DIR$/digits/extensions/view/imageOutput/view.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/extensions/view/imageOutput/view_template.html" afterPath="$PROJECT_DIR$/digits/extensions/view/imageOutput/view_template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/forms.py" afterPath="$PROJECT_DIR$/digits/model/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/images/classification/job.py" afterPath="$PROJECT_DIR$/digits/model/images/classification/job.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/images/classification/test_views.py" afterPath="$PROJECT_DIR$/digits/model/images/classification/test_views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/images/classification/views.py" afterPath="$PROJECT_DIR$/digits/model/images/classification/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/images/generic/job.py" afterPath="$PROJECT_DIR$/digits/model/images/generic/job.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/images/generic/test_views.py" afterPath="$PROJECT_DIR$/digits/model/images/generic/test_views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/images/generic/views.py" afterPath="$PROJECT_DIR$/digits/model/images/generic/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/tasks/tensorflow_train.py" afterPath="$PROJECT_DIR$/digits/model/tasks/tensorflow_train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/model/tasks/train.py" afterPath="$PROJECT_DIR$/digits/model/tasks/train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/scheduler.py" afterPath="$PROJECT_DIR$/digits/scheduler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/standard-networks/tensorflow/lenet_slim.py" afterPath="$PROJECT_DIR$/digits/standard-networks/tensorflow/lenet_slim.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/templates/models/images/generic/show.html" afterPath="$PROJECT_DIR$/digits/templates/models/images/generic/show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/tools/tensorflow/main.py" afterPath="$PROJECT_DIR$/digits/tools/tensorflow/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/tools/tensorflow/model.py" afterPath="$PROJECT_DIR$/digits/tools/tensorflow/model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/tools/tensorflow/tf_data.py" afterPath="$PROJECT_DIR$/digits/tools/tensorflow/tf_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/utils/__init__.py" afterPath="$PROJECT_DIR$/digits/utils/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits/utils/lmdbreader.py" afterPath="$PROJECT_DIR$/digits/utils/lmdbreader.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/model/images/classification/test_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1100">
+              <caret line="654" column="32" lean-forward="false" selection-start-line="654" selection-start-column="32" selection-end-line="654" selection-end-column="32" />
+              <folding>
+                <marker date="1494453272682" expanded="true" signature="20649:30916" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="22843:23917" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="23421:23522" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="23956:24794" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="24219:24357" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="24494:24595" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="24829:25656" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="24974:25155" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="25703:26493" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="25815:25979" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="25848:25953" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="26549:27441" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="26661:26966" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="26694:26940" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="27481:28744" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="27626:27807" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="28429:28744" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="28771:29725" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="28916:29097" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="29764:30681" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="29876:30040" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="29909:30014" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="30727:30916" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="30736:30907" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="45670:45671" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="45749:46155" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="45820:45889" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inference.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/tools/inference.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-490">
+              <caret line="93" column="65" lean-forward="false" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/digits/tools/tensorflow/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="127" column="31" lean-forward="false" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tensorflow_framework.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/frameworks/tensorflow_framework.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tensorflow_train.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/model/tasks/tensorflow_train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="87" column="41" lean-forward="false" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+              <folding>
+                <marker date="1494453272450" expanded="true" signature="32307:32417" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="32307:32629" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="32307:37197" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="32307:37367" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="32713:33266" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="33456:33663" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="34245:34378" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="34760:35772" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="34800:35772" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="34871:35772" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="34921:35301" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="35037:35164" ph="'...'" />
+                <marker date="1494453272450" expanded="true" signature="35168:35299" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="35365:35697" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="35453:35697" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="35807:36530" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="36053:36220" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="36309:36454" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="36565:37084" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="36651:36773" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="36863:37008" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="37393:37515" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="37402:37475" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="37561:37665" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="37570:37621" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="37721:37779" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="job.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/job.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2168">
+              <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+              <folding>
+                <marker date="1494453269638" expanded="true" signature="1187:1431" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="1187:1454" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="1187:10659" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="1274:1431" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="1522:2178" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="1531:1638" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="2207:2455" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="2216:2270" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="2491:2754" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="2500:2555" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="2796:3117" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="2805:2874" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="2888:2999" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="3021:3100" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="3044:3098" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="3136:3189" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="3209:3264" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="3311:3923" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="3320:3603" ph="&quot;&quot;&quot;Returns a path to the given file...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="3730:3879" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="3959:4174" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="4195:4221" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="4243:4348" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="4373:4518" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="4382:4467" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="4550:5272" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="4559:4620" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="4827:5097" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="4860:5087" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="5135:5236" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="5305:6356" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="5314:5521" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="5592:6086" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="5662:6086" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="5709:6086" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="5918:6060" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="6111:6321" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="6174:6256" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="6389:7480" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="6398:6465" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="6534:6755" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="7337:7480" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="7376:7480" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="7502:7706" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="7511:7573" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="7727:8406" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="7736:7867" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="7880:8214" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="8436:8584" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="8445:8509" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="8613:8905" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="8622:8693" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="8942:9484" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="8951:9044" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="9187:9373" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="9541:10037" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="9550:9612" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="9715:9926" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="10069:10391" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="10078:10130" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="10139:10326" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="10421:10518" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="10430:10487" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269638" expanded="true" signature="10547:10659" ph="..." />
+                <marker date="1494453269638" expanded="true" signature="10556:10619" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/model/tasks/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="515" column="8" lean-forward="false" selection-start-line="515" selection-start-column="8" selection-end-line="515" selection-end-column="8" />
+              <folding>
+                <marker date="1494453272450" expanded="true" signature="16188:16767" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="16197:16261" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="16404:16500" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="16514:16653" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="16554:16653" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="16585:16653" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="16815:16972" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="16824:16891" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="16999:17834" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="17008:17086" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="17579:17715" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="17611:17715" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="17864:18573" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="17873:17980" ph="&quot;&quot;&quot;Returns learning rate data formatted for a C3.js graph...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="18390:18572" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="18442:18485" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="18510:18561" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="18612:18791" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="18621:18770" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="18827:18963" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="18836:18918" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="18999:19347" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="19008:19077" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="19119:19272" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="19150:19272" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="19383:19573" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="19392:19489" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="19620:22738" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="19629:19828" ph="&quot;&quot;&quot;Returns all train/val outputs in data for one C3.js graph...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="19845:19952" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="20084:21169" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="20105:20220" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="20238:20299" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="20363:21169" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="20422:21169" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="20677:20917" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="20737:20863" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="20943:21125" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="21003:21123" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="21358:22414" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="21379:21492" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="21510:21571" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="21633:22414" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="21675:22414" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="21924:22164" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="21984:22110" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="22190:22372" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="22250:22370" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="22603:22738" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="22616:22714" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="22818:22900" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="22827:22867" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="22932:23026" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="22941:22990" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="23059:23160" ph="..." />
+                <marker date="1494453272450" expanded="true" signature="23068:23124" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453272450" expanded="true" signature="23210:23272" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="job.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/model/job.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="53" column="70" lean-forward="false" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+              <folding>
+                <element signature="e#69#107#0" expanded="true" />
+                <marker date="1494453269642" expanded="true" signature="1484:1677" ph="..." />
+                <marker date="1494453269642" expanded="true" signature="1484:2054" ph="..." />
+                <marker date="1494453269642" expanded="true" signature="1704:1834" ph="..." />
+                <marker date="1494453269642" expanded="true" signature="1865:2054" ph="..." />
+                <marker date="1494453269642" expanded="true" signature="1874:2017" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/tools/tensorflow/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+              <folding>
+                <marker date="1494453272682" expanded="true" signature="9577:10161" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="10066:10161" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="10100:10161" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="10144:10161" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="27328:29606" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="27328:30221" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="27470:27624" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="28184:28527" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="28657:28993" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="29123:29571" ph="..." />
+                <marker date="1494453272682" expanded="true" signature="29774:29873" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digits/test_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-509">
+              <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+              <folding>
+                <marker date="1494453269646" expanded="true" signature="487:6099" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="3815:5519" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="4192:5519" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="5591:5860" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="5600:5646" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269646" expanded="true" signature="5928:6099" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="5937:6010" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1494453269646" expanded="true" signature="6101:6277" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="6311:7276" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="6354:6443" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="6473:6699" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="6733:6825" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="6859:6960" ph="..." />
+                <marker date="1494453269646" expanded="true" signature="7010:7276" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>testgr</find>
+      <find>testgra</find>
+      <find>testgrad</find>
+      <find>testgradi</find>
+      <find>testgradie</find>
+      <find>testgradien</find>
+      <find>testgradient</find>
+      <find>testgradients</find>
+      <find>testgradientse</find>
+      <find>testgradientsex</find>
+      <find>testgradientsext</find>
+      <find>test_create</find>
+      <find>test_create_gener</find>
+      <find>test_create_generi</find>
+      <find>test_create_generic</find>
+      <find>t</find>
+      <find>test</find>
+      <find>tes</find>
+      <find>cl</find>
+      <find>cls.</find>
+      <find>cls.EX</find>
+      <find>cls.EXTENSIO</find>
+      <find>cls.EXTENSION</find>
+      <find>get_snapshot</find>
+      <find>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</find>
+      <find>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</find>
+      <find>&gt;&gt;&gt;&gt;</find>
+      <find>&gt;&gt;&gt;</find>
+      <find>&gt;&gt;</find>
+      <find>&gt;</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/digits/tools/tensorflow/model.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tensorflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits_GAN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Nosetests in test_create_generic_db.py">
+    <configuration default="false" name="Nosetests for test_views.GenericViewsTest.test_page_dataset_new" type="tests" factoryName="Nosetests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/digits/dataset/generic" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="digits_GAN" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_views.GenericViewsTest.test_page_dataset_new&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetests for test_create_generic_db.TestGradientsExtensionDontForceSameShape" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/digits/tools" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="digits_GAN" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_create_generic_db.TestGradientsExtensionDontForceSameShape&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetests in test_create_generic_db.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/digits/tools" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="digits_GAN" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/digits/tools/test_create_generic_db.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="digits_GAN" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="digits_GAN" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="digits_GAN" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="digits_GAN" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests for test_views.GenericViewsTest.test_page_dataset_new" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests for test_create_generic_db.TestGradientsExtensionDontForceSameShape" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in test_create_generic_db.py" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test_create_generic_db.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests for test_views.GenericViewsTest.test_page_dataset_new" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests for test_create_generic_db.TestGradientsExtensionDontForceSameShape" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c277f6c-f79f-418a-a555-0647b4a318b2" name="Default" comment="" />
+      <created>1494025434498</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1494025434498</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Nosetests_for_test_create_generic_db_TestGradientsExtensionDontForceSameShape - 2017.05.05 at 16h 51m 20s.xml">
+      <configuration name="Nosetests for test_create_generic_db.TestGradientsExtensionDontForceSameShape" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_for_test_create_generic_db_TestGradientsExtensionDontForceSameShape - 2017.05.05 at 17h 01m 04s.xml">
+      <configuration name="Nosetests for test_create_generic_db.TestGradientsExtensionDontForceSameShape" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_for_test_create_generic_db_TestGradientsExtensionDontForceSameShape - 2017.05.05 at 17h 03m 51s.xml">
+      <configuration name="Nosetests for test_create_generic_db.TestGradientsExtensionDontForceSameShape" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_for_test_views_GenericViewsTest_test_page_dataset_new - 2017.05.05 at 16h 12m 46s.xml">
+      <configuration name="Nosetests for test_views.GenericViewsTest.test_page_dataset_new" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_for_test_views_GenericViewsTest_test_page_dataset_new - 2017.05.05 at 17h 05m 58s.xml">
+      <configuration name="Nosetests for test_views.GenericViewsTest.test_page_dataset_new" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_for_test_views_GenericViewsTest_test_page_dataset_new - 2017.05.05 at 17h 07m 26s.xml">
+      <configuration name="Nosetests for test_views.GenericViewsTest.test_page_dataset_new" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_for_test_views_GenericViewsTest_test_page_dataset_new - 2017.05.05 at 17h 24m 49s.xml">
+      <configuration name="Nosetests for test_views.GenericViewsTest.test_page_dataset_new" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25336927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5018868" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.49811321" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39959225" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25336927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/digits/tools/test_create_generic_db.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/digits/extensions/data/__init__.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/digits/dataset/generic/test_views.py</url>
+          <line>202</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/digits/standard-networks/tensorflow/alexnet_slim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/standard-networks/tensorflow/rnn_mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="46" column="101" lean-forward="false" selection-start-line="46" selection-start-column="101" selection-end-line="46" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/standard-networks/tensorflow/alexnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="91" column="47" lean-forward="false" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/standard-networks/tensorflow/vgg16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="76" lean-forward="false" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/config/tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/templates/models/gpu_utilization.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/travis/install-tensorflow.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/travis/bust-cache.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/travis/ppa-upload.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/travis/pypi-upload.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="140" column="22" lean-forward="false" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/tools/test_create_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1188">
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits-test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/tensorflow/python/platform/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/travis/install-caffe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/model/images/classification/job.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/model/images/classification/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="379" column="29" lean-forward="false" selection-start-line="379" selection-start-column="29" selection-end-line="379" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/model/images/classification/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/scheduler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="338" column="0" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/utils/routing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="347" column="0" lean-forward="false" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/webapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="1820" column="0" lean-forward="false" selection-start-line="1820" selection-start-column="0" selection-end-line="1820" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_nosetest_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/nose/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2099">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding>
+            <element signature="e#51#84#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/unittest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/nose/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/nose/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="470" column="0" lean-forward="false" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/dataset/images/classification/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/dataset/images/classification/test_imageset_creator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-509">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding>
+            <marker date="1494453269646" expanded="true" signature="487:6099" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="3815:5519" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="4192:5519" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="5591:5860" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="5600:5646" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269646" expanded="true" signature="5928:6099" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="5937:6010" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269646" expanded="true" signature="6101:6277" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6311:7276" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6354:6443" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6473:6699" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6733:6825" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6859:6960" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="7010:7276" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/frameworks/tensorflow_framework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/model/images/classification/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1100">
+          <caret line="654" column="32" lean-forward="false" selection-start-line="654" selection-start-column="32" selection-end-line="654" selection-end-column="32" />
+          <folding>
+            <marker date="1494453272682" expanded="true" signature="20649:30916" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="22843:23917" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="23421:23522" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="23956:24794" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="24219:24357" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="24494:24595" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="24829:25656" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="24974:25155" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="25703:26493" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="25815:25979" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="25848:25953" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="26549:27441" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="26661:26966" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="26694:26940" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="27481:28744" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="27626:27807" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="28429:28744" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="28771:29725" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="28916:29097" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="29764:30681" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="29876:30040" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="29909:30014" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="30727:30916" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="30736:30907" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="45670:45671" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="45749:46155" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="45820:45889" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/tools/tensorflow/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding>
+            <marker date="1494453272682" expanded="true" signature="9577:10161" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="10066:10161" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="10100:10161" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="10144:10161" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="27328:29606" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="27328:30221" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="27470:27624" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="28184:28527" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="28657:28993" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="29123:29571" ph="..." />
+            <marker date="1494453272682" expanded="true" signature="29774:29873" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/model/tasks/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="515" column="8" lean-forward="false" selection-start-line="515" selection-start-column="8" selection-end-line="515" selection-end-column="8" />
+          <folding>
+            <marker date="1494453272450" expanded="true" signature="16188:16767" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="16197:16261" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="16404:16500" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="16514:16653" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="16554:16653" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="16585:16653" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="16815:16972" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="16824:16891" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="16999:17834" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="17008:17086" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="17579:17715" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="17611:17715" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="17864:18573" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="17873:17980" ph="&quot;&quot;&quot;Returns learning rate data formatted for a C3.js graph...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="18390:18572" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="18442:18485" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="18510:18561" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="18612:18791" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="18621:18770" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="18827:18963" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="18836:18918" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="18999:19347" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="19008:19077" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="19119:19272" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="19150:19272" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="19383:19573" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="19392:19489" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="19620:22738" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="19629:19828" ph="&quot;&quot;&quot;Returns all train/val outputs in data for one C3.js graph...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="19845:19952" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="20084:21169" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="20105:20220" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="20238:20299" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="20363:21169" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="20422:21169" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="20677:20917" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="20737:20863" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="20943:21125" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="21003:21123" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="21358:22414" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="21379:21492" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="21510:21571" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="21633:22414" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="21675:22414" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="21924:22164" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="21984:22110" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="22190:22372" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="22250:22370" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="22603:22738" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="22616:22714" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="22818:22900" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="22827:22867" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="22932:23026" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="22941:22990" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="23059:23160" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="23068:23124" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="23210:23272" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/model/job.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="53" column="70" lean-forward="false" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+          <folding>
+            <element signature="e#69#107#0" expanded="true" />
+            <marker date="1494453269642" expanded="true" signature="1484:1677" ph="..." />
+            <marker date="1494453269642" expanded="true" signature="1484:2054" ph="..." />
+            <marker date="1494453269642" expanded="true" signature="1704:1834" ph="..." />
+            <marker date="1494453269642" expanded="true" signature="1865:2054" ph="..." />
+            <marker date="1494453269642" expanded="true" signature="1874:2017" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/model/tasks/tensorflow_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="87" column="41" lean-forward="false" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+          <folding>
+            <marker date="1494453272450" expanded="true" signature="32307:32417" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="32307:32629" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="32307:37197" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="32307:37367" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="32713:33266" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="33456:33663" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="34245:34378" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="34760:35772" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="34800:35772" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="34871:35772" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="34921:35301" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="35037:35164" ph="'...'" />
+            <marker date="1494453272450" expanded="true" signature="35168:35299" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="35365:35697" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="35453:35697" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="35807:36530" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="36053:36220" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="36309:36454" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="36565:37084" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="36651:36773" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="36863:37008" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="37393:37515" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="37402:37475" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="37561:37665" ph="..." />
+            <marker date="1494453272450" expanded="true" signature="37570:37621" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453272450" expanded="true" signature="37721:37779" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/job.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2168">
+          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding>
+            <marker date="1494453269638" expanded="true" signature="1187:1431" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="1187:1454" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="1187:10659" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="1274:1431" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="1522:2178" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="1531:1638" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="2207:2455" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="2216:2270" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="2491:2754" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="2500:2555" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="2796:3117" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="2805:2874" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="2888:2999" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="3021:3100" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="3044:3098" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="3136:3189" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="3209:3264" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="3311:3923" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="3320:3603" ph="&quot;&quot;&quot;Returns a path to the given file...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="3730:3879" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="3959:4174" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="4195:4221" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="4243:4348" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="4373:4518" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="4382:4467" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="4550:5272" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="4559:4620" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="4827:5097" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="4860:5087" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="5135:5236" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="5305:6356" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="5314:5521" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="5592:6086" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="5662:6086" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="5709:6086" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="5918:6060" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="6111:6321" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="6174:6256" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="6389:7480" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="6398:6465" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="6534:6755" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="7337:7480" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="7376:7480" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="7502:7706" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="7511:7573" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="7727:8406" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="7736:7867" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="7880:8214" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="8436:8584" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="8445:8509" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="8613:8905" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="8622:8693" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="8942:9484" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="8951:9044" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="9187:9373" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="9541:10037" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="9550:9612" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="9715:9926" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="10069:10391" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="10078:10130" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="10139:10326" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="10421:10518" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="10430:10487" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269638" expanded="true" signature="10547:10659" ph="..." />
+            <marker date="1494453269638" expanded="true" signature="10556:10619" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/tools/inference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490">
+          <caret line="93" column="65" lean-forward="false" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/tensorflow/core/framework/resource_handle_pb2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/nose/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="291" column="0" lean-forward="false" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/nose/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="470" column="0" lean-forward="false" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="392" column="0" lean-forward="false" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-1247972723/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="729" column="6" lean-forward="false" selection-start-line="729" selection-start-column="6" selection-end-line="729" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/nose/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/tools/test_create_generic_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-509">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding>
+            <marker date="1494453269646" expanded="true" signature="487:6099" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="3815:5519" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="4192:5519" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="5591:5860" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="5600:5646" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269646" expanded="true" signature="5928:6099" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="5937:6010" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1494453269646" expanded="true" signature="6101:6277" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6311:7276" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6354:6443" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6473:6699" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6733:6825" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="6859:6960" ph="..." />
+            <marker date="1494453269646" expanded="true" signature="7010:7276" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/extensions/data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/dataset/generic/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="201" column="24" lean-forward="false" selection-start-line="201" selection-start-column="24" selection-end-line="201" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2372">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digits/tools/tensorflow/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="127" column="31" lean-forward="false" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
