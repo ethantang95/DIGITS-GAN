@@ -20,3 +20,7 @@ TAGS
 
 # intellij files
 .idea/workspace.xml
+.idea
+
+#vscode
+.vscode
