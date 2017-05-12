@@ -1322,7 +1322,7 @@ class TestTensorflowCreation(BaseTestCreation, test_utils.TensorflowMixin):
 
 
 class TestTensorflowCreatedWideUnencodedShuffle(BaseTestCreatedWide, test_utils.TensorflowMixin):
-    #ENCODING = 'none'
+    ENCODING = 'none'
     SHUFFLE = True
 
 
