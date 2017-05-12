@@ -21,6 +21,7 @@ import math
 import numpy as np
 import os
 import tensorflow as tf
+import threading
 
 # Local imports
 import caffe_tf_pb2
@@ -46,7 +47,7 @@ LIST_DELIMITER = ' '  # For the FILELIST format
 
 logging.basicConfig(format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S',
                     level=logging.INFO)
-
+logger = logging.getLogger('digits.tools.inference')
 
 def get_backend_of_source(db_path):
     """
@@ -396,9 +397,10 @@ class LoaderFactory(object):
                 shapes=[[0], self.get_shape(), []],  # Only makes sense is dynamic_pad=False #@TODO(tzaman) - FIXME
                 min_after_dequeue=5*self.batch_size,
                 allow_smaller_final_batch=True,  # Happens if total%batch_size!=0
-                name='batcher'
-            )
+                name='batcher')
         else:
+            print("Batch Info")
+            print(len(str(single_batch)))
             batch = tf.train.batch(
                 single_batch,
                 batch_size=self.batch_size,
@@ -408,8 +410,8 @@ class LoaderFactory(object):
                 num_threads=NUM_THREADS_DATA_LOADER if not self.is_inference else 1,
                 capacity=max_queue_capacity,  # Max amount that will be loaded and queued
                 allow_smaller_final_batch=True,  # Happens if total%batch_size!=0
-                name='batcher',
-            )
+                name='batcher')
+
 
         self.batch_k = batch[0]  # Key
         self.batch_x = batch[1]  # Input

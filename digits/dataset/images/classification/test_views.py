@@ -117,6 +117,9 @@ class BaseViewsTestWithImageset(BaseViewsTest):
             'encoding':         cls.ENCODING,
             'compression':      cls.COMPRESSION,
         }
+
+        print("Encoding is: " + cls.ENCODING)
+
         data.update(kwargs)
 
         request_json = data.pop('json', False)
@@ -124,6 +127,7 @@ class BaseViewsTestWithImageset(BaseViewsTest):
         if request_json:
             url += '.json'
 
+        print("Sending request to: " + url)
         rv = cls.app.post(url, data=data)
 
         if request_json:

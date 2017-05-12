@@ -51,7 +51,6 @@ class ModelJob(Job):
 
     def load_dataset(self):
         from digits.webapp import scheduler
-        logger.debug("Loading data set for object " + self.dataset_id)
         job = scheduler.get_job(self.dataset_id)
         assert job is not None, 'Cannot find dataset'
         self.dataset = job

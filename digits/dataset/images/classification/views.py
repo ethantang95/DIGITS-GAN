@@ -310,9 +310,11 @@ def create():
         )
 
         if form.method.data == 'folder':
+            print("going into folder")
             from_folders(job, form)
 
         elif form.method.data == 'textfile':
+            print("going into textfile")
             from_files(job, form)
 
         else:

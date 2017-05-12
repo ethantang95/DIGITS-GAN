@@ -288,7 +288,9 @@ class BaseViewsTestWithModel(BaseViewsTestWithDataset):
     def setUpClass(cls):
         super(BaseViewsTestWithModel, cls).setUpClass()
         cls.model_id = cls.create_model(json=True)
-        assert cls.model_wait_completion(cls.model_id) == 'Done', 'create failed'
+        result = cls.model_wait_completion(cls.model_id)
+        print("set up result: " + result)
+        assert result == 'Done', 'create failed'
 
 
 class BaseTestViews(BaseViewsTest):
@@ -1320,7 +1322,7 @@ class TestTensorflowCreation(BaseTestCreation, test_utils.TensorflowMixin):
 
 
 class TestTensorflowCreatedWideUnencodedShuffle(BaseTestCreatedWide, test_utils.TensorflowMixin):
-    ENCODING = 'none'
+    #ENCODING = 'none'
     SHUFFLE = True
 
 
