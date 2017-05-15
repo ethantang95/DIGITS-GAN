@@ -21,7 +21,6 @@ import math
 import numpy as np
 import os
 import tensorflow as tf
-import threading
 
 # Local imports
 import caffe_tf_pb2
@@ -183,6 +182,7 @@ class LoaderFactory(object):
         Returns the correct backend.
         """
         backend = get_backend_of_source(db_path)
+        logger.debug("type of backend found at " + db_path + " is " + backend)
         loader = None
         if backend == 'lmdb':
             loader = LmdbLoader()

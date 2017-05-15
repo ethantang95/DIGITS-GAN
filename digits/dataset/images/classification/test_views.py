@@ -118,8 +118,6 @@ class BaseViewsTestWithImageset(BaseViewsTest):
             'compression':      cls.COMPRESSION,
         }
 
-        print("Encoding is: " + cls.ENCODING)
-
         data.update(kwargs)
 
         request_json = data.pop('json', False)

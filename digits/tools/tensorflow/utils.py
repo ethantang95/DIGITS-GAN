@@ -92,11 +92,11 @@ def chw_to_hwc(x):
 
 
 def bgr_to_rgb(x):
-    return tf.reverse(x, [3])
+    return tf.reverse(x, [2])
 
 
 def rgb_to_bgr(x):
-    return tf.reverse(x, [3])
+    return tf.reverse(x, [2])
 
 
 def get_available_gpus():
