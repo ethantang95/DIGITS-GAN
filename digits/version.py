@@ -1,3 +1,3 @@
 # Copyright (c) 2016, NVIDIA CORPORATION.  All rights reserved.
 
-__version__ = 'DIGITS-GAN-v0.1'
+__version__ = '5.1-dev'
