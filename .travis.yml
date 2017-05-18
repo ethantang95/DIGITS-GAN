@@ -47,7 +47,8 @@ matrix:
               - git fetch nvidia-digits-upstream --tags
               - pip install twine
           script:
-              - ./packaging/deb/build.sh
+              - DEBIAN_REVISION=1ppa1~trusty ./packaging/deb/build.sh
+              - DEBIAN_REVISION=1ppa1~xenial ./packaging/deb/build.sh
               - python setup.py sdist bdist_wheel
           deploy:
               - provider: script
