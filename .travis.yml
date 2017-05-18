@@ -139,4 +139,3 @@ install:
 
 script:
     - ./digits-test -v
-
