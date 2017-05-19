@@ -21,11 +21,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import math
-import numpy as np
 import tensorflow as tf
-
-from tensorflow.python.framework import ops
 
 image_summary = tf.summary.image
 scalar_summary = tf.summary.scalar

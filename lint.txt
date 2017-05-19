@@ -1,0 +1,465 @@
+=== Checking for Python lint ...
+./examples/gan/gan_embeddings.py:17:1: E302 expected 2 blank lines, found 1
+./examples/gan/gan_embeddings.py:46:13: E225 missing whitespace around operator
+./examples/gan/gan_embeddings.py:51:1: E302 expected 2 blank lines, found 1
+./examples/gan/network-celebA-encoder.py:24:1: F401 'math' imported but unused
+./examples/gan/network-celebA-encoder.py:25:1: F401 'np' imported but unused
+./examples/gan/network-celebA-encoder.py:28:1: F401 'ops' imported but unused
+./examples/gan/network-celebA-encoder.py:120:29: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA-encoder.py:161:13: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA-encoder.py:168:17: F821 undefined name 'Tower'
+./examples/gan/network-celebA-encoder.py:208:6: F821 undefined name 'model_property'
+./examples/gan/network-celebA-encoder.py:219:6: F821 undefined name 'model_property'
+./examples/gan/network-celebA-encoder.py:297:60: E225 missing whitespace around operator
+./examples/gan/network-celebA-encoder.py:300:34: E221 multiple spaces before operator
+./examples/gan/network-celebA-encoder.py:382:48: F841 local variable 'scope' is assigned to but never used
+./examples/gan/network-celebA-encoder.py:393:17: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA-encoder.py:397:17: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA-encoder.py:401:17: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA-encoder.py:405:17: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA.py:24:1: F401 'math' imported but unused
+./examples/gan/network-celebA.py:25:1: F401 'np' imported but unused
+./examples/gan/network-celebA.py:28:1: F401 'ops' imported but unused
+./examples/gan/network-celebA.py:120:29: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA.py:161:13: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA.py:168:17: F821 undefined name 'Tower'
+./examples/gan/network-celebA.py:208:6: F821 undefined name 'model_property'
+./examples/gan/network-celebA.py:215:6: F821 undefined name 'model_property'
+./examples/gan/network-celebA.py:302:64: E225 missing whitespace around operator
+./examples/gan/network-celebA.py:323:121: E501 line too long (144 > 120 characters)
+./examples/gan/network-celebA.py:324:121: E501 line too long (143 > 120 characters)
+./examples/gan/network-celebA.py:327:47: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA.py:421:48: F841 local variable 'scope' is assigned to but never used
+./examples/gan/network-celebA.py:433:17: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA.py:437:17: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA.py:441:17: E128 continuation line under-indented for visual indent
+./examples/gan/network-celebA.py:445:17: E128 continuation line under-indented for visual indent
+./examples/gan/network-mnist-encoder.py:24:1: F401 'math' imported but unused
+./examples/gan/network-mnist-encoder.py:25:1: F401 'np' imported but unused
+./examples/gan/network-mnist-encoder.py:28:1: F401 'ops' imported but unused
+./examples/gan/network-mnist-encoder.py:141:29: E128 continuation line under-indented for visual indent
+./examples/gan/network-mnist-encoder.py:182:13: E128 continuation line under-indented for visual indent
+./examples/gan/network-mnist-encoder.py:189:17: F821 undefined name 'Tower'
+./examples/gan/network-mnist-encoder.py:225:6: F821 undefined name 'model_property'
+./examples/gan/network-mnist-encoder.py:238:6: F821 undefined name 'model_property'
+./examples/gan/network-mnist-encoder.py:313:121: E501 line too long (129 > 120 characters)
+./examples/gan/network-mnist-encoder.py:320:34: E221 multiple spaces before operator
+./examples/gan/network-mnist-encoder.py:393:5: E303 too many blank lines (2)
+./examples/gan/network-mnist-encoder.py:413:48: F841 local variable 'scope' is assigned to but never used
+./examples/gan/network-mnist-encoder.py:429:121: E501 line too long (123 > 120 characters)
+./examples/gan/network-mnist.py:24:1: F401 'math' imported but unused
+./examples/gan/network-mnist.py:25:1: F401 'np' imported but unused
+./examples/gan/network-mnist.py:28:1: F401 'ops' imported but unused
+./examples/gan/network-mnist.py:141:29: E128 continuation line under-indented for visual indent
+./examples/gan/network-mnist.py:182:13: E128 continuation line under-indented for visual indent
+./examples/gan/network-mnist.py:189:17: F821 undefined name 'Tower'
+./examples/gan/network-mnist.py:225:6: F821 undefined name 'model_property'
+./examples/gan/network-mnist.py:233:6: F821 undefined name 'model_property'
+./examples/gan/network-mnist.py:309:121: E501 line too long (133 > 120 characters)
+./examples/gan/network-mnist.py:320:34: E221 multiple spaces before operator
+./examples/gan/network-mnist.py:330:121: E501 line too long (143 > 120 characters)
+./examples/gan/network-mnist.py:331:121: E501 line too long (146 > 120 characters)
+./examples/gan/network-mnist.py:333:121: E501 line too long (144 > 120 characters)
+./examples/gan/network-mnist.py:334:121: E501 line too long (143 > 120 characters)
+./examples/gan/network-mnist.py:336:121: E501 line too long (135 > 120 characters)
+./examples/gan/network-mnist.py:445:48: F841 local variable 'scope' is assigned to but never used
+./examples/gan/network-mnist.py:461:121: E501 line too long (134 > 120 characters)
+./examples/question-answering/memn2n.py:1:17: F821 undefined name 'Tower'
+./examples/question-answering/memn2n.py:3:6: F821 undefined name 'model_property'
+./examples/question-answering/memn2n.py:10:24: F821 undefined name 'np'
+./examples/question-answering/memn2n.py:10:71: F821 undefined name 'np'
+./examples/question-answering/memn2n.py:17:20: F821 undefined name 'np'
+./examples/question-answering/memn2n.py:24:18: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:27:38: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:29:39: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:30:39: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:35:39: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:37:25: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:38:23: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:41:29: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:42:25: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:44:30: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:44:43: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:45:30: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:48:29: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:50:34: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:50:47: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:51:30: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:52:27: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:54:27: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:57:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:61:21: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:63:25: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:72:20: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:73:13: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:73:25: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:76:23: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:78:18: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:79:18: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:82:19: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:83:18: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:84:18: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:89:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:90:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:91:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:92:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:93:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:94:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:101:6: F821 undefined name 'model_property'
+./examples/question-answering/memn2n.py:105:13: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:106:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:107:16: F821 undefined name 'digits'
+./examples/question-answering/memn2n.py:108:20: F821 undefined name 'digits'
+./examples/question-answering/memn2n.py:109:31: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:114:17: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:115:18: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:115:35: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:116:20: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:117:9: E301 expected 1 blank line, found 0
+./examples/question-answering/memn2n.py:118:17: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:119:17: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:120:17: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:120:26: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:121:20: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:121:37: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:122:22: E225 missing whitespace around operator
+./examples/question-answering/memn2n.py:123:28: F821 undefined name 'tf'
+./examples/question-answering/memn2n.py:123:71: E231 missing whitespace after ','
+./examples/question-answering/memn2n.py:124:59: E231 missing whitespace after ','
+./examples/question-answering/memn2n.py:130:21: F821 undefined name 'tf'
+./digits/model/forms.py:316:9: E265 block comment should start with '# '
+./digits/jobs/20170515-143113-ccb1/network.py:1:17: F821 undefined name 'Tower'
+./digits/jobs/20170515-143113-ccb1/network.py:3:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-143113-ccb1/network.py:8:17: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:10:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:14:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:33:19: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:34:19: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:34:26: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:35:19: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:39:23: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:42:19: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:42:26: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:48:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:48:88: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:48:121: E501 line too long (127 > 120 characters)
+./digits/jobs/20170515-143113-ccb1/network.py:50:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:50:71: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:52:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:52:70: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:54:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:54:78: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:59:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:59:61: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:60:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:60:61: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:61:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:61:62: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:62:20: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:62:73: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:68:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-143113-ccb1/network.py:70:16: F821 undefined name 'digits'
+./digits/jobs/20170515-143113-ccb1/network.py:71:20: F821 undefined name 'digits'
+./digits/jobs/20170515-143113-ccb1/network.py:72:31: F821 undefined name 'tf'
+./digits/jobs/20170515-143113-ccb1/network.py:73:20: W292 no newline at end of file
+./digits/jobs/20170511-114055-5689/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-114055-5689/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-114055-5689/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-114055-5689/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-114055-5689/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-114055-5689/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-114055-5689/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-114055-5689/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-114055-5689/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-114055-5689/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-114055-5689/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170512-134048-0523/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170512-134048-0523/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170512-134048-0523/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170512-134048-0523/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170512-134048-0523/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170512-134048-0523/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170512-134048-0523/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170512-134048-0523/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170512-134048-0523/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170512-134048-0523/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170512-134048-0523/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-111644-6f0c/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-111644-6f0c/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111644-6f0c/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111644-6f0c/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-111644-6f0c/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111644-6f0c/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-111644-6f0c/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111644-6f0c/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111644-6f0c/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-111644-6f0c/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111644-6f0c/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-112147-f95e/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-112147-f95e/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-112147-f95e/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-112147-f95e/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-112147-f95e/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-112147-f95e/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-112147-f95e/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-112147-f95e/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-112147-f95e/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-112147-f95e/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-112147-f95e/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170515-114518-8189/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170515-114518-8189/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-114518-8189/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170515-114518-8189/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170515-114518-8189/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170515-114518-8189/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170515-114518-8189/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170515-114518-8189/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170515-114518-8189/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170515-114518-8189/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-114518-8189/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-164750-196a/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-164750-196a/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-164750-196a/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-164750-196a/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-164750-196a/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-164750-196a/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-164750-196a/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-164750-196a/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-164750-196a/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-164750-196a/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-164750-196a/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170515-131223-1336/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170515-131223-1336/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-131223-1336/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170515-131223-1336/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170515-131223-1336/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170515-131223-1336/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170515-131223-1336/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170515-131223-1336/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170515-131223-1336/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170515-131223-1336/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-131223-1336/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170515-142307-f8bb/network.py:1:17: F821 undefined name 'Tower'
+./digits/jobs/20170515-142307-f8bb/network.py:3:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-142307-f8bb/network.py:8:17: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:10:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:14:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:33:19: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:34:19: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:34:26: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:35:19: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:39:23: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:42:19: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:42:26: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:48:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:48:88: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:48:121: E501 line too long (127 > 120 characters)
+./digits/jobs/20170515-142307-f8bb/network.py:50:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:50:71: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:52:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:52:70: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:54:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:54:78: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:59:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:59:61: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:60:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:60:61: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:61:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:61:62: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:62:20: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:62:73: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:68:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-142307-f8bb/network.py:70:16: F821 undefined name 'digits'
+./digits/jobs/20170515-142307-f8bb/network.py:71:20: F821 undefined name 'digits'
+./digits/jobs/20170515-142307-f8bb/network.py:72:31: F821 undefined name 'tf'
+./digits/jobs/20170515-142307-f8bb/network.py:73:20: W292 no newline at end of file
+./digits/jobs/20170511-111702-6890/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-111702-6890/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111702-6890/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111702-6890/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-111702-6890/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111702-6890/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-111702-6890/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111702-6890/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111702-6890/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-111702-6890/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111702-6890/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-161108-8225/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-161108-8225/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-161108-8225/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-161108-8225/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-161108-8225/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-161108-8225/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-161108-8225/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-161108-8225/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-161108-8225/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-161108-8225/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-161108-8225/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170512-133826-f145/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170512-133826-f145/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170512-133826-f145/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170512-133826-f145/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170512-133826-f145/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170512-133826-f145/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170512-133826-f145/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170512-133826-f145/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170512-133826-f145/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170512-133826-f145/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170512-133826-f145/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170515-113615-27b4/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170515-113615-27b4/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-113615-27b4/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170515-113615-27b4/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170515-113615-27b4/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170515-113615-27b4/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170515-113615-27b4/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170515-113615-27b4/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170515-113615-27b4/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170515-113615-27b4/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-113615-27b4/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-111144-1a12/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-111144-1a12/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111144-1a12/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111144-1a12/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-111144-1a12/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111144-1a12/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-111144-1a12/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111144-1a12/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111144-1a12/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-111144-1a12/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111144-1a12/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-111317-c0dd/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-111317-c0dd/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111317-c0dd/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111317-c0dd/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-111317-c0dd/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111317-c0dd/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-111317-c0dd/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111317-c0dd/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111317-c0dd/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-111317-c0dd/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111317-c0dd/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-111719-02d5/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-111719-02d5/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111719-02d5/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111719-02d5/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-111719-02d5/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-111719-02d5/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-111719-02d5/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111719-02d5/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-111719-02d5/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-111719-02d5/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-111719-02d5/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170512-133942-e5db/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170512-133942-e5db/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170512-133942-e5db/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170512-133942-e5db/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170512-133942-e5db/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170512-133942-e5db/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170512-133942-e5db/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170512-133942-e5db/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170512-133942-e5db/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170512-133942-e5db/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170512-133942-e5db/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170512-135219-10e9/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170512-135219-10e9/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170512-135219-10e9/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170512-135219-10e9/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170512-135219-10e9/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170512-135219-10e9/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170512-135219-10e9/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170512-135219-10e9/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170512-135219-10e9/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170512-135219-10e9/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170512-135219-10e9/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-113522-fdcd/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-113522-fdcd/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-113522-fdcd/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-113522-fdcd/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-113522-fdcd/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-113522-fdcd/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-113522-fdcd/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-113522-fdcd/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-113522-fdcd/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-113522-fdcd/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-113522-fdcd/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170511-161036-af8a/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170511-161036-af8a/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-161036-af8a/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170511-161036-af8a/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170511-161036-af8a/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170511-161036-af8a/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170511-161036-af8a/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170511-161036-af8a/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170511-161036-af8a/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170511-161036-af8a/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170511-161036-af8a/network.py:15:16: F821 undefined name 'digits'
+./digits/jobs/20170515-130623-5903/network.py:2:17: F821 undefined name 'Tower'
+./digits/jobs/20170515-130623-5903/network.py:4:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-130623-5903/network.py:7:13: F821 undefined name 'tf'
+./digits/jobs/20170515-130623-5903/network.py:7:72: F821 undefined name 'tf'
+./digits/jobs/20170515-130623-5903/network.py:8:13: F821 undefined name 'tf'
+./digits/jobs/20170515-130623-5903/network.py:8:63: F821 undefined name 'tf'
+./digits/jobs/20170515-130623-5903/network.py:9:17: F821 undefined name 'tf'
+./digits/jobs/20170515-130623-5903/network.py:10:17: F821 undefined name 'tf'
+./digits/jobs/20170515-130623-5903/network.py:10:24: F821 undefined name 'tf'
+./digits/jobs/20170515-130623-5903/network.py:13:6: F821 undefined name 'model_property'
+./digits/jobs/20170515-130623-5903/network.py:15:16: F821 undefined name 'digits'
+./digits/tools/tensorflow/gan_grid.py:25:1: F401 'json' imported but unused
+./digits/tools/tensorflow/gan_grid.py:31:1: F811 redefinition of unused 'time' from line 21
+./digits/tools/tensorflow/gan_grid.py:53:1: E303 too many blank lines (3)
+./digits/tools/tensorflow/gan_grid.py:70:121: E501 line too long (131 > 120 characters)
+./digits/tools/tensorflow/gan_grid.py:380:25: E261 at least two spaces before inline comment
+./digits/tools/tensorflow/gan_grid.py:387:39: E202 whitespace before ')'
+./digits/tools/tensorflow/gan_grid.py:394:72: F821 undefined name 'w'
+./digits/tools/tensorflow/gan_grid.py:394:75: F821 undefined name 'a'
+./digits/tools/tensorflow/gan_grid.py:397:13: E265 block comment should start with '# '
+./digits/tools/tensorflow/gan_grid.py:402:13: E265 block comment should start with '# '
+./digits/tools/tensorflow/gan_grid.py:448:38: E231 missing whitespace after ','
+./digits/tools/tensorflow/gan_grid.py:483:1: E302 expected 2 blank lines, found 1
+./digits/tools/tensorflow/gandisplay.py:1:1: F401 'wxversion' imported but unused
+./digits/tools/tensorflow/gandisplay.py:5:1: F401 'random' imported but unused
+./digits/tools/tensorflow/gandisplay.py:13:1: E265 block comment should start with '# '
+./digits/tools/tensorflow/gandisplay.py:19:1: E302 expected 2 blank lines, found 1
+./digits/tools/tensorflow/gandisplay.py:33:1: E302 expected 2 blank lines, found 1
+./digits/tools/tensorflow/gandisplay.py:65:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:66:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:70:5: E303 too many blank lines (2)
+./digits/tools/tensorflow/gandisplay.py:78:20: E231 missing whitespace after ','
+./digits/tools/tensorflow/gandisplay.py:81:9: E265 block comment should start with '# '
+./digits/tools/tensorflow/gandisplay.py:82:13: E221 multiple spaces before operator
+./digits/tools/tensorflow/gandisplay.py:91:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:92:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:93:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:109:15: E261 at least two spaces before inline comment
+./digits/tools/tensorflow/gandisplay.py:113:1: E302 expected 2 blank lines, found 1
+./digits/tools/tensorflow/gandisplay.py:115:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:116:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:117:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:122:26: E201 whitespace after '('
+./digits/tools/tensorflow/gandisplay.py:122:44: E202 whitespace before ')'
+./digits/tools/tensorflow/gandisplay.py:123:19: E261 at least two spaces before inline comment
+./digits/tools/tensorflow/gandisplay.py:134:17: F841 local variable 'channels' is assigned to but never used
+./digits/tools/tensorflow/gandisplay.py:139:25: E261 at least two spaces before inline comment
+./digits/tools/tensorflow/gandisplay.py:143:44: E231 missing whitespace after ','
+./digits/tools/tensorflow/gandisplay.py:161:31: E251 unexpected spaces around keyword / parameter equals
+./digits/tools/tensorflow/gandisplay.py:161:33: E251 unexpected spaces around keyword / parameter equals
+./digits/tools/tensorflow/gandisplay.py:165:9: E266 too many leading '#' for block comment
+./digits/tools/tensorflow/gandisplay.py:188:121: E501 line too long (136 > 120 characters)
+./digits/tools/tensorflow/gandisplay.py:189:34: E128 continuation line under-indented for visual indent
+./digits/tools/tensorflow/gandisplay.py:197:121: E501 line too long (133 > 120 characters)
+./digits/tools/tensorflow/gandisplay.py:198:34: E127 continuation line over-indented for visual indent
+./digits/tools/tensorflow/gandisplay.py:224:20: E231 missing whitespace after ','
+./digits/tools/tensorflow/gandisplay.py:239:1: E302 expected 2 blank lines, found 1
+./plugins/view/gan/digitsViewPluginGan/forms.py:23:23: F821 undefined name 'validators'
+./plugins/view/gan/digitsViewPluginGan/forms.py:29:5: E303 too many blank lines (2)
+./plugins/view/gan/digitsViewPluginGan/view.py:5:1: F401 'tempfile' imported but unused
+./plugins/view/gan/digitsViewPluginGan/view.py:142:9: E265 block comment should start with '# '
+./plugins/view/gan/digitsViewPluginGan/view.py:207:23: F821 undefined name 'ValueEror'
+./plugins/view/gan/digitsViewPluginGan/view.py:254:13: E265 block comment should start with '# '
+./plugins/view/gan/digitsViewPluginGan/view.py:257:17: E265 block comment should start with '# '
+./plugins/view/gan/digitsViewPluginGan/view.py:258:25: E261 at least two spaces before inline comment
+./plugins/view/gan/digitsViewPluginGan/view.py:258:26: E262 inline comment should start with '# '
+./plugins/view/gan/digitsViewPluginGan/view.py:258:121: E501 line too long (168 > 120 characters)
