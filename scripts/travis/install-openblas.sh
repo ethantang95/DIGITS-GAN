@@ -26,3 +26,5 @@ fi
 
 cd "$INSTALL_DIR"
 sudo make install PREFIX=/usr/local
+
+echo "install-openblas.sh finished"

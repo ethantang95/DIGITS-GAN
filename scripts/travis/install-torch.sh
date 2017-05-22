@@ -43,3 +43,4 @@ LOG_FILE="$LOCAL_DIR/torch-install.log"
 WEEK=$(date +%Y-%W)
 echo "$WEEK" >"${INSTALL_DIR}/cache-version.txt"
 
+echo "install-torch.sh finished"
