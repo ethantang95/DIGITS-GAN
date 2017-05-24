@@ -99,26 +99,26 @@ addons:
             - libprotobuf-dev
             - libsnappy-dev
             - protobuf-compiler
-            - python-dev
-            - python-flask
-            - python-gevent
-            - python-gevent-websocket
-            - python-gflags
-            - python-h5py
-            - python-matplotlib
-            - python-mock
-            - python-nose
+#            - python-dev
+#            - python-flask
+#            - python-gevent
+#            - python-gevent-websocket
+#            - python-gflags
+#            - python-h5py
+#            - python-matplotlib
+#            - python-mock
+#            - python-nose
 #            - python-numpy
-            - python-opencv
-            - python-pil
+#            - python-opencv
+#            - python-pil
             - python-pip
-            - python-protobuf
-            - python-psutil
-            - python-pydot
-            - python-requests
-            - python-scipy
-            - python-six
-            - python-skimage
+#            - python-protobuf
+#            - python-psutil
+#            - python-pydot
+#            - python-requests
+#            - python-scipy
+#            - python-six
+#            - python-skimage
 
 before_install:
     - deactivate
