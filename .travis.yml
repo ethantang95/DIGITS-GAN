@@ -108,7 +108,7 @@ addons:
             - python-matplotlib
             - python-mock
             - python-nose
-            - python-numpy
+#            - python-numpy
             - python-opencv
             - python-pil
             - python-pip
