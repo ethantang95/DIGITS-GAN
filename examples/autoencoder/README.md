@@ -96,33 +96,35 @@ After training for 30 epochs the loss function should look similar to this:
 Select the dataset you just created and under the `Custom network` tab, select `Tensorflow`. There you can paste the following network definition:
 ```python
 # Tensorflow MNIST autoencoder model using TensorFlow-Slim
-
+# The format of the data in this example is: batch_size * height * width * channel
 class UserModel(Tower):
     @model_property
     def inference(self):
 
-        _x = tf.reshape(self.x, shape=[-1, 1, 28, 28])
         with slim.arg_scope([slim.fully_connected],
                             weights_initializer=tf.contrib.layers.xavier_initializer(),
-                            weights_regularizer=slim.l2_regularizer(0.0005)):
-            model = tf.reshape(_x, shape=[-1, 784]) # equivalent to `model = slim.flatten(_x)`
+                            weights_regularizer=slim.l2_regularizer(0.0005) ):
+            const = tf.constant(0.00390625)
+            model = tf.multiply(self.x, const)
+            model = tf.reshape(model, shape=[-1, 784]) # equivalent to `model = slim.flatten(_x)`
             model = slim.fully_connected(model, 300, scope='fc1')
             model = slim.fully_connected(model, 50, scope='fc2')
             model = slim.fully_connected(model, 300, scope='fc3')
             model = slim.fully_connected(model, 784, activation_fn=None, scope='fc4')
-            model = tf.reshape(model, shape=[-1, 1, 28, 28])
+            model = tf.reshape(model, shape=[-1, 28, 28, 1])
 
         # The below image summary makes it very easy to review your result
-        tf.summary.image(_x.op.name, _x, max_outputs=5, collections=['summaries'])
+        tf.summary.image(self.x.op.name, self.x, max_outputs=5, collections=['summaries'])
         tf.summary.image(model.op.name, model, max_outputs=5, collections=['summaries'])
 
         return model
 
     @model_property
     def loss(self):
-        _x = tf.reshape(self.x, shape=[-1, 1, 28, 28])
-        return digits.mse_loss(self.inference, _x)
+        return digits.mse_loss(self.inference, self.x)
 ```
+
+The result from running the Tensorflow example should produce results that are similar to Torch.
 
 ## Verification
 
