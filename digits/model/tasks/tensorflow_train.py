@@ -159,8 +159,9 @@ class TensorflowTrainTask(TrainTask):
                     break
         if not snapshot_filename:
             raise ValueError('Invalid epoch')
-        if download:
-            snapshot_filename = snapshot_filename + ".data-00000-of-00001"
+        
+        # Because the file is saved with this extension
+        snapshot_filename = snapshot_filename + ".data-00000-of-00001"
 
         return snapshot_filename
 
