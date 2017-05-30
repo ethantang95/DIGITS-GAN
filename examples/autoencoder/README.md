@@ -98,6 +98,7 @@ Select the dataset you just created and under the `Custom network` tab, select `
 # Tensorflow MNIST autoencoder model using TensorFlow-Slim
 # The format of the data in this example is: batch_size * height * width * channel
 class UserModel(Tower):
+
     @model_property
     def inference(self):
 
