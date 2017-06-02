@@ -112,7 +112,7 @@ class UserModel(Tower):
             model = slim.fully_connected(model, 50, scope='fc2')
             model = slim.fully_connected(model, 300, scope='fc3')
             model = slim.fully_connected(model, 784, activation_fn=None, scope='fc4')
-            model = tf.reshape(model, shape=[-1, 28, 28, 1])
+            model = tf.reshape(model, shape=[-1, self.input_shape[0], self.input_shape[1], self.input_shape[2]])
 
         # The below image summary makes it very easy to review your result
         tf.summary.image(self.x.op.name, self.x, max_outputs=5, collections=['summaries'])
