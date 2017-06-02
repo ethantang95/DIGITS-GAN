@@ -11,11 +11,8 @@ env:
         - OPENBLAS_ROOT=~/openblas
         - CAFFE_ROOT=~/caffe
         - TORCH_ROOT=~/torch
-<<<<<<< HEAD
-=======
         - OMP_NUM_THREADS=1
         - OPENBLAS_MAIN_FREE=1
->>>>>>> TF-Example
         - secure: "WSqrE+PQm76DdoRLRGKTK6fRWfXZjIb0BWCZm3IgHgFO7OE6fcK2tBnpDNNw4XQjmo27FFWlEhxN32g18P84n5PvErHaH65IuS9Nv6FkLlPXZlVqGNxbPmEA4oTkD/6Y6kZyZWZtLh2+/1ijuzQAPnIy/4BEuL8pdO+PsoJ9hYM="
     matrix:
         - DIGITS_TEST_FRAMEWORK=caffe CAFFE_FORK=NVIDIA
