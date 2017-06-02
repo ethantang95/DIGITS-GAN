@@ -94,7 +94,7 @@ and conversely will maximize the angle between features extracted from images fr
 
 ## Using Tensorflow
 
-Under the `Custom Network` tab, select `Tensorflow`. There you can paste this [network definition](siamese_simple-TF.py) then give your model a name and click `Create`.
+Under the `Custom Network` tab, select `Tensorflow`. There you can paste this [network definition](siamese-TF.py) then give your model a name and click `Create`.
 
 ## Verification
 
