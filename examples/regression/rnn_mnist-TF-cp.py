@@ -1,9 +1,9 @@
-from tensorflow.python.ops import rnn, rnn_cell
+from tensorflow.contrib import rnn
 
 class UserModel(Tower):
 
     @model_property
-    def inference(params):
+    def inference(self):
         n_hidden = 28
         n_classes = self.nclasses
         n_steps = self.input_shape[0]
@@ -31,20 +31,22 @@ class UserModel(Tower):
         # Reshaping to (n_steps*batch_size, n_input)
         x = tf.reshape(x, [-1, n_input])
         # Split to get a list of 'n_steps' tensors of shape (batch_size, n_input)
-        x = tf.split(0, n_steps, x)
+        x = tf.split(x, n_steps, 0)
 
         # Define a lstm cell with tensorflow
-        lstm_cell = rnn_cell.BasicLSTMCell(n_hidden, forget_bias=1.0)
+        lstm_cell = rnn.BasicLSTMCell(n_hidden, forget_bias=1.0, reuse=True)
 
         # Get lstm cell output
-        outputs, states = rnn.rnn(lstm_cell, x, dtype=tf.float32)
+        outputs, states = rnn.static_rnn(lstm_cell, x, dtype=tf.float32)
 
         # Linear activation, using rnn inner loop last output
         model = tf.matmul(outputs[-1], weights['w1']) + biases['b1']
+        
+        return model
 
     @model_property
-    def loss(y):
-        loss = digits.classification_loss(model, y)
-        accuracy = digits.classification_accuracy(model, y)
-        tf.summary.scalar(accuracy.op.name, accuracy, collections=["Training Summary"])
+    def loss(self):
+        label = self.y
+        model = self.inference
+        loss = digits.mse_loss(label, model)
         return loss
