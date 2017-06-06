@@ -12,7 +12,7 @@ Table of Contents
     * [Provided Helpful Functions](#provided-helpful-functions)
     * [Visualization With TensorBoard](visualization-with-tensorboard)
 * [Examples](#examples)
-    * [Adjusting model to inputs dimensions and number of classes](#adjusting-model-to-input-dimensions-and-number-of-classes)
+    * [Simple Auto-Encoder Network](#simple-auto-encoder-network)
     * [Selecting the NN Backend](#selecting-the-nn-backend)
     * [Supervised Regression Learning](#supervised-regression-learning)
     * [Multi-GPU training](#multi-gpu-training)
@@ -130,7 +130,7 @@ To know more about how TensorBoard works, its official documentation is availabi
 
 ## Examples
 
-### Simple auto-encoder network
+### Simple Auto-Encoder Network
 
 The following network is a simple auto encoder to demostate the structure of how to use tensorflow in DIGITS
 ```python
