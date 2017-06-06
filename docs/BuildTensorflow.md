@@ -35,10 +35,10 @@ pip install tensorflow-gpu=1.1.0
 
 Tensorflow should then install effortlessly and pull in all its required dependices.
 
-## Installation from Source
+## Installation From Source
 
 If you would like to build Tensorflow from scratch, the instructions are available on [the official installation guide](https://www.tensorflow.org/versions/master/install/install_sources)
 
-## Getting Started With Tensorflow in DIGITS
+## Getting Started With Tensorflow In DIGITS
 
 Follow [these instructions](GettingStartedTensorflow.md) for information on getting started with Tensorflow in DIGITS

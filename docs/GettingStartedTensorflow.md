@@ -2,9 +2,9 @@
 
 Table of Contents
 =================
-* [Enabling support for Tensorflow in DIGITS](#enabling-support-for-tensorflow-in-digits)
-* [Selecting Tensorflow when creating a model in DIGITS](#selecting-tensorflow-when-creating-a-model-in-digits)
-* [Defining a Tensorflow model in DIGITS](#defining-a-tensorflow-model-in-digits)
+* [Enabling Support For Tensorflow In DIGITS](#enabling-support-for-tensorflow-in-digits)
+* [Selecting Tensorflow When Creating A Model In DIGITS](#selecting-tensorflow-when-creating-a-model-in-digits)
+* [Defining A Tensorflow Model In DIGITS](#defining-a-tensorflow-model-in-digits)
     * [Provided Properties](#provided-properties)
     * [Internal Properties](#internal-properties)
     * [Tensors](#tensors)
@@ -13,24 +13,22 @@ Table of Contents
     * [Visualization With TensorBoard](visualization-with-tensorboard)
 * [Examples](#examples)
     * [Simple Auto-Encoder Network](#simple-auto-encoder-network)
-    * [Selecting the NN Backend](#selecting-the-nn-backend)
-    * [Supervised Regression Learning](#supervised-regression-learning)
-    * [Multi-GPU training](#multi-gpu-training)
+    * [Multi-GPU Training](#multi-gpu-training)
 * [Tutorials](#tutorials)
 
-## Enabling support for Tensorflow in DIGITS
+## Enabling Support For Tensorflow In DIGITS
 
 DIGITS will automatically enable support for Tensorflow if it detects that Tensorflow-gpu is installed in the system. This is done by a line of python code that attempts to ```import tensorflow``` to see if it actually imports.
 
 If DIGITS cannot enable tensorflow, a message will be printed in the console saying: ```Tensorflow support is disabled```
 
-## Selecting Tensorflow when creating a model in DIGITS
+## Selecting Tensorflow When Creating A Model In DIGITS
 
 Click on the "Tensorflow" tab on the model creation page
 
 {insert image here}
 
-## Defining a Tensorflow model in DIGITS
+## Defining A Tensorflow Model In DIGITS
 
 To define a Tensorflow model in DIGITS, you need to write a python class that follows this basic template
 
@@ -176,6 +174,10 @@ class UserModel(Tower):
 
         return loss
 ```
+
+### Multi-GPU Training
+
+<WIP>
 
 ## Tutorials
 
