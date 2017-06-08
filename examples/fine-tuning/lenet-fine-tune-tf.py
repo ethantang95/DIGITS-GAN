@@ -2,17 +2,7 @@ class UserModel(Tower):
 
     @model_property
     def inference(self):
-        
-        #define the weights we want to train
-        self.weights.append('model/wc1:0')
-        self.weights.append('model/wc2:0')
-        self.weights.append('model/bc1:0')
-        self.weights.append('model/bc2:0')
-        self.weights.append('model/wd1:0')
-        self.weights.append('model/bd1:0')
-        self.weights.append('model/twout:0')
-        self.weights.append('model/tbout:0')
-        
+
         # Create some wrappers for simplicity
         def conv2d(x, W, b, s, name, padding='SAME'):
             # Conv2D wrapper, with bias and relu activation
@@ -69,6 +59,8 @@ class UserModel(Tower):
             'true_out': tf.get_variable('twout', [10, 2], initializer=tf.contrib.layers.xavier_initializer())
         }
 
+        self.weights = weights
+
         # Leave the intial biases zero
         biases = {
             'bc1': tf.get_variable('bc1', [20], initializer=tf.constant_initializer(0.0)),
@@ -78,6 +70,8 @@ class UserModel(Tower):
             'true_out': tf.get_variable('tbout', [2], initializer=tf.constant_initializer(0.0))
         }
 
+        self.biases = biases
+
         model = conv_net(self.x, weights, biases)
         return model
 
@@ -86,4 +80,18 @@ class UserModel(Tower):
         loss = digits.classification_loss(self.inference, self.y)
         accuracy = digits.classification_accuracy(self.inference, self.y)
         self.summaries.append(tf.summary.scalar(accuracy.op.name, accuracy))
-        return loss
+        return [{'loss': loss, 'vars': self.weights_to_train()}]
+
+    def weights_to_train(self):
+
+        weights = []
+        weights.append(self.weights['wc1'])
+        weights.append(self.weights['wc2'])
+        weights.append(self.weights['bc1'])
+        weights.append(self.weights['bc2'])
+        weights.append(self.weights['wd1'])
+        weights.append(self.weights['bd1'])
+        weights.append(self.weights['twout'])
+        weights.append(self.weights['tbout'])
+
+        return weights

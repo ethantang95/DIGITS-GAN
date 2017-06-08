@@ -171,8 +171,7 @@ class Model(object):
                     if self.stage == digits.STAGE_TRAIN:
                         grad_tower_losses = []
                         for loss in self.get_tower_losses(tower_model):
-                            filtered_loss = self.filter_weights_for_loss(loss, tower_model.weights)
-                            grad_tower_loss = self.optimizer.compute_gradients(filtered_loss['loss'], filtered_loss['vars'])
+                            grad_tower_loss = self.optimizer.compute_gradients(loss['loss'], loss['vars'])
                             grad_tower_loss = tower_model.gradientUpdate(grad_tower_loss)
                             grad_tower_losses.append(grad_tower_loss)
                         grad_towers.append(grad_tower_losses)
@@ -292,24 +291,6 @@ class Model(object):
         else:
             return [{'loss': tower.loss, 'vars': tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES)}]
 
-    def filter_weights_for_loss(self, loss_set, filter_list):
-        """
-        Return a filtered list of losses depending on if the user has specified any
-        to be trained
-        """
-
-        loss_list = loss_set['loss']
-        vars_list = loss_set['vars']
-
-        if len(filter_list) != 0:
-            vars_filtered_list = [x for x in vars_list if x.name in filter_list]
-        else:
-            vars_filtered_list = vars_list
-
-        result = {'loss': loss_list, 'vars' : vars_filtered_list}
-
-        return result
-
 
 class Tower(object):
 
@@ -322,7 +303,7 @@ class Tower(object):
         self.x = x
         self.y = y
         self.train = None
-        self.weights = []
+
 
     def gradientUpdate(self, grad):
         return grad
