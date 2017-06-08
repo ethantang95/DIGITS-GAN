@@ -13,6 +13,7 @@ Table of Contents
     * [Visualization With TensorBoard](visualization-with-tensorboard)
 * [Examples](#examples)
     * [Simple Auto-Encoder Network](#simple-auto-encoder-network)
+    * [Specifying Specific Variables to Train](#specifying-specific-variables-to-train)
     * [Multi-GPU Training](#multi-gpu-training)
 * [Tutorials](#tutorials)
 
@@ -100,7 +101,7 @@ Property name | Return Type | Description
 --------------|-------------|------------
 __init()__    | None        | The constructor for the ```UserModel``` class
 inference()   | Tensor      | Called during training and inference
-loss()        | Tensor      | Called during training to determine the loss
+loss()        | Tensor      | Called during training to determine the loss and variables to train
 
 ### Tensors
 
@@ -173,6 +174,41 @@ class UserModel(Tower):
         loss = digits.mse_loss(original, model)
 
         return loss
+```
+
+### Specifying Specific Variables to Train
+
+The following is a demonstration of how to specifying which weights we would like to use for training. This is applicable for fine tuning a model.
+```python
+class UserModel(Tower):
+
+    @model_property
+    def inference(self):
+
+        model = construct_model()
+        """code to construct the network omitted"""
+
+        self.weights = {
+            'weight1': tf.get_variable('weight1', [5, 5, self.input_shape[2], 20], initializer=tf.contrib.layers.xavier_initializer()),
+            'weight2': tf.get_variable('weight2', [5, 5, 20, 50], initializer=tf.contrib.layers.xavier_initializer())
+        }
+
+        self.biases = {
+            'bias1': tf.get_variable('bias1', [20], initializer=tf.constant_initializer(0.0)),
+            'bias2': tf.get_variable('bias2', [50], initializer=tf.constant_initializer(0.0))
+        }
+
+        return model
+
+    @model_property
+    def loss(self):
+        loss = calculate_loss()
+        """code to calculate loss omitted"""
+
+        # We would only like to train the variables for the 2nd layer of the network
+        # as indicated by the number 2 in their suffix
+        # When we specify which variables to train, all the other variables will be frozen
+        return [{'loss': loss, 'vars': [self.weights['weight2'], self.biases['bias2']]}]
 ```
 
 ### Multi-GPU Training
