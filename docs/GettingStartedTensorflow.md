@@ -13,7 +13,7 @@ Table of Contents
     * [Visualization With TensorBoard](visualization-with-tensorboard)
 * [Examples](#examples)
     * [Simple Auto-Encoder Network](#simple-auto-encoder-network)
-    * [Specifying Specific Variables to Train](#specifying-specific-variables-to-train)
+    * [Freezing Variables in Pre-Trained Models by Renaming](#freezing-variables-in-pre-trained-models-by-renaming)
     * [Multi-GPU Training](#multi-gpu-training)
 * [Tutorials](#tutorials)
 
@@ -176,9 +176,9 @@ class UserModel(Tower):
         return loss
 ```
 
-### Specifying Specific Variables to Train
+### Freezing Variables in Pre-Trained Models by Renaming
 
-The following is a demonstration of how to specifying which weights we would like to use for training. This is applicable for fine tuning a model.
+The following is a demonstration of how to specifying which weights we would like to use for training. This works best if we are using a pre-trained model. This is applicable for fine tuning a model.
 ```python
 class UserModel(Tower):
 
@@ -188,14 +188,19 @@ class UserModel(Tower):
         model = construct_model()
         """code to construct the network omitted"""
 
+        # assuming the original model have weight2 and bias2 variables
+        # in here, we renamed them by adding the suffix _not_in_use
+        # this tells Tensorflow that these variables in the pre-trained model should
+        # not be retrained and it should be frozen
+        # If we would like to freeze a weight, all we have to do is just rename it
         self.weights = {
             'weight1': tf.get_variable('weight1', [5, 5, self.input_shape[2], 20], initializer=tf.contrib.layers.xavier_initializer()),
-            'weight2': tf.get_variable('weight2', [5, 5, 20, 50], initializer=tf.contrib.layers.xavier_initializer())
+            'weight2': tf.get_variable('weight2_not_in_use', [5, 5, 20, 50], initializer=tf.contrib.layers.xavier_initializer())
         }
 
         self.biases = {
             'bias1': tf.get_variable('bias1', [20], initializer=tf.constant_initializer(0.0)),
-            'bias2': tf.get_variable('bias2', [50], initializer=tf.constant_initializer(0.0))
+            'bias2': tf.get_variable('bias2_not_in_use', [50], initializer=tf.constant_initializer(0.0))
         }
 
         return model
@@ -204,11 +209,7 @@ class UserModel(Tower):
     def loss(self):
         loss = calculate_loss()
         """code to calculate loss omitted"""
-
-        # We would only like to train the variables for the 2nd layer of the network
-        # as indicated by the number 2 in their suffix
-        # When we specify which variables to train, all the other variables will be frozen
-        return [{'loss': loss, 'vars': [self.weights['weight2'], self.biases['bias2']]}]
+        return loss
 ```
 
 ### Multi-GPU Training
