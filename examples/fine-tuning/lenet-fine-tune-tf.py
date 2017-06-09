@@ -54,7 +54,7 @@ class UserModel(Tower):
             # fully connected, 4*4*16=800 inputs, 500 outputs
             'wd1': tf.get_variable('wd1', [4*4*50, 500], initializer=tf.contrib.layers.xavier_initializer()),
             # 500 inputs, 10 outputs (class prediction)
-            'out': tf.get_variable('wout', [500, 10], initializer=tf.contrib.layers.xavier_initializer()),
+            'out': tf.get_variable('wout_not_in_use', [500, 10], initializer=tf.contrib.layers.xavier_initializer()),
             # adjust from 10 classes to 2 output
             'true_out': tf.get_variable('twout', [10, 2], initializer=tf.contrib.layers.xavier_initializer())
         }
@@ -66,7 +66,7 @@ class UserModel(Tower):
             'bc1': tf.get_variable('bc1', [20], initializer=tf.constant_initializer(0.0)),
             'bc2': tf.get_variable('bc2', [50], initializer=tf.constant_initializer(0.0)),
             'bd1': tf.get_variable('bd1', [500], initializer=tf.constant_initializer(0.0)),
-            'out': tf.get_variable('bout', [10], initializer=tf.constant_initializer(0.0)),
+            'out': tf.get_variable('bout_not_in_use', [10], initializer=tf.constant_initializer(0.0)),
             'true_out': tf.get_variable('tbout', [2], initializer=tf.constant_initializer(0.0))
         }
 
@@ -74,24 +74,11 @@ class UserModel(Tower):
 
         model = conv_net(self.x, weights, biases)
         return model
-
+
     @model_property
     def loss(self):
         loss = digits.classification_loss(self.inference, self.y)
         accuracy = digits.classification_accuracy(self.inference, self.y)
         self.summaries.append(tf.summary.scalar(accuracy.op.name, accuracy))
-        return [{'loss': loss, 'vars': self.weights_to_train()}]
-
-    def weights_to_train(self):
-
-        weights = []
-        weights.append(self.weights['wc1'])
-        weights.append(self.weights['wc2'])
-        weights.append(self.biases['bc1'])
-        weights.append(self.biases['bc2'])
-        weights.append(self.weights['wd1'])
-        weights.append(self.biases['bd1'])
-        weights.append(self.weights['true_out'])
-        weights.append(self.biases['true_out'])
-
-        return weights
+        return loss
+        
