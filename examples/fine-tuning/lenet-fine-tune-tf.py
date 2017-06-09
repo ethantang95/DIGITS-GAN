@@ -87,11 +87,11 @@ class UserModel(Tower):
         weights = []
         weights.append(self.weights['wc1'])
         weights.append(self.weights['wc2'])
-        weights.append(self.weights['bc1'])
-        weights.append(self.weights['bc2'])
+        weights.append(self.biases['bc1'])
+        weights.append(self.biases['bc2'])
         weights.append(self.weights['wd1'])
-        weights.append(self.weights['bd1'])
-        weights.append(self.weights['twout'])
-        weights.append(self.weights['tbout'])
+        weights.append(self.biases['bd1'])
+        weights.append(self.weights['true_out'])
+        weights.append(self.biases['true_out'])
 
         return weights
