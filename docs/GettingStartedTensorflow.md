@@ -116,16 +116,16 @@ DIGITS provides a few helpful functions to help you with creating the model. Her
 
 Function Name       | Parameters          | Description
 --------------------|---------------------|-------------
-classification_loss | pred - the images to be classified <br> y - the labels | used for classification training to calculate the loss of image classification
-mse_loss            | lhs - left hand tensor <br> rhs - right hand tensor | used for calculating the mean square loss between 2 tensors
-constrastive_loss   | lhs - left hand tensor <br> rhs - right hand tensor <br> y - labels | calculates the contrastive loss with respect to the Caffe definition
-classification_accuracy | pred - the image to be classified <br> y - the labels | used to measure how accurate the classification task is
-nhwc_to_nchw | x - the tensor to transpose | transpose the tensor that was originally NHWC format to NCHW. The tensor must be a degree of 4
-nchw_to_nhwc | x - the tensor to transpose | transpose the tensor that was originally NCHW format to NHWC. The tensor must be a degree of 4
-hwc_to_chw | x - the tensor to transpose | transpose the tensor that was originally HWC format to CHW. The tensor must be a degree of 3
-chw_to_hwc | x - the tensor to transpose | transpose the tensor that was originally CHW format to HWC. The tensor must be a degree of 3
-bgr_to_rgb | x - the tensor to transform | transform the tensor that was originally in BGR channels to RGB.
-rgb_to_bgr | x - the tensor to transform | transform the tensor that was originally in RGB channels to BGR.
+classification_loss | pred - the images to be classified <br> y - the labels | Used for classification training to calculate the loss of image classification
+mse_loss            | lhs - left hand tensor <br> rhs - right hand tensor | Used for calculating the mean square loss between 2 tensors
+constrastive_loss   | lhs - left hand tensor <br> rhs - right hand tensor <br> y - labels | Calculates the contrastive loss with respect to the Caffe definition
+classification_accuracy | pred - the image to be classified <br> y - the labels | Used to measure how accurate the classification task is
+nhwc_to_nchw | x - the tensor to transpose | Transpose the tensor that was originally NHWC format to NCHW. The tensor must be a degree of 4
+nchw_to_nhwc | x - the tensor to transpose | Transpose the tensor that was originally NCHW format to NHWC. The tensor must be a degree of 4
+hwc_to_chw | x - the tensor to transpose | Transpose the tensor that was originally HWC format to CHW. The tensor must be a degree of 3
+chw_to_hwc | x - the tensor to transpose | Transpose the tensor that was originally CHW format to HWC. The tensor must be a degree of 3
+bgr_to_rgb | x - the tensor to transform | Transform the tensor that was originally in BGR channels to RGB.
+rgb_to_bgr | x - the tensor to transform | Transform the tensor that was originally in RGB channels to BGR.
 
 ### Visualization With TensorBoard
 
