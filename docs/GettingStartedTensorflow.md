@@ -1,14 +1,14 @@
-# Getting Started with Tensorflow 1.1 in DIGITS
+# Getting Started with TensorFlow™ in DIGITS
 
 Table of Contents
 =================
-* [Enabling Support For Tensorflow In DIGITS](#enabling-support-for-tensorflow-in-digits)
-* [Selecting Tensorflow When Creating A Model In DIGITS](#selecting-tensorflow-when-creating-a-model-in-digits)
-* [Defining A Tensorflow Model In DIGITS](#defining-a-tensorflow-model-in-digits)
+* [Enabling Support For TensorFlow In DIGITS](#enabling-support-for-tensorflow-in-digits)
+* [Selecting TensorFlow When Creating A Model In DIGITS](#selecting-tensorflow-when-creating-a-model-in-digits)
+* [Defining A TensorFlow Model In DIGITS](#defining-a-tensorflow-model-in-digits)
     * [Provided Properties](#provided-properties)
     * [Internal Properties](#internal-properties)
     * [Tensors](#tensors)
-* [Other Tensorflow Tools in DIGITS](#other-tensorflow-tools-in-digits)
+* [Other TensorFlow Tools in DIGITS](#other-tensorflow-tools-in-digits)
     * [Provided Helpful Functions](#provided-helpful-functions)
     * [Visualization With TensorBoard](visualization-with-tensorboard)
 * [Examples](#examples)
@@ -16,26 +16,26 @@ Table of Contents
     * [Freezing Variables in Pre-Trained Models by Renaming](#freezing-variables-in-pre-trained-models-by-renaming)
     * [Multi-GPU Training](#multi-gpu-training)
 
-## Enabling Support For Tensorflow In DIGITS
+## Enabling Support For TensorFlow In DIGITS
 
-DIGITS will automatically enable support for Tensorflow if it detects that Tensorflow-gpu is installed in the system. This is done by a line of python code that attempts to ```import tensorflow``` to see if it actually imports.
+DIGITS will automatically enable support for TensorFlow if it detects that TensorFlow-gpu is installed in the system. This is done by a line of python code that attempts to ```import tensorflow``` to see if it actually imports.
 
-If DIGITS cannot enable tensorflow, a message will be printed in the console saying: ```Tensorflow support is disabled```
+If DIGITS cannot enable tensorflow, a message will be printed in the console saying: ```TensorFlow support is disabled```
 
-## Selecting Tensorflow When Creating A Model In DIGITS
+## Selecting TensorFlow When Creating A Model In DIGITS
 
-Click on the "Tensorflow" tab on the model creation page
+Click on the "TensorFlow" tab on the model creation page
 
 {insert image here}
 
-## Defining A Tensorflow Model In DIGITS
+## Defining A TensorFlow Model In DIGITS
 
-To define a Tensorflow model in DIGITS, you need to write a python class that follows this basic template
+To define a TensorFlow model in DIGITS, you need to write a python class that follows this basic template
 
 ```python
 class UserModel(Tower):
-* 
-    @model_propertyOther Tensorflow Tools in DIGITS
+
+    @model_propertyOther TensorFlow Tools in DIGITS
     def inference(self):
         # Your code here
         return model
@@ -85,53 +85,53 @@ Properties that are accessible through ```self```
 
 Property name | Type      | Description
 --------------|-----------|------------
-nclasses      | number    | Number of classes (for classification datasets). For other type of datasets, this is undefined
-input_shape   | Tensor    | Shape (1D Tensor) of the first input Tensor. For image data, this is set to height, width, and channels accessible by [0], [1], and [2] respectively.
-is_training   | boolean   | Whether this is a training graph
-is_inference  | boolean   | Whether this graph is created for inference/testing
-x             | Tensor    | The input node, with the shape of [N, H, W, C]
-y             | Tensor    | The label, [N] for scalar labels, [N, H, W, C] otherwise. Defined only if self.is_training is True
+`nclasses`      | number    | Number of classes (for classification datasets). For other type of datasets, this is undefined
+`input_shape`   | Tensor    | Shape (1D Tensor) of the first input Tensor. For image data, this is set to height, width, and channels accessible by [0], [1], and [2] respectively.
+`is_training`   | boolean   | Whether this is a training graph
+`is_inference`  | boolean   | Whether this graph is created for inference/testing
+`x`             | Tensor    | The input node, with the shape of [N, H, W, C]
+`y`             | Tensor    | The label, [N] for scalar labels, [N, H, W, C] otherwise. Defined only if self.is_training is True
 
 ### Internal Properties
 
-These properties are in the ```UserModel``` class written by the user
+These properties are in the `UserModel` class written by the user
 
 Property name | Return Type | Description
 --------------|-------------|------------
-__init()__    | None        | The constructor for the ```UserModel``` class
-inference()   | Tensor      | Called during training and inference
-loss()        | Tensor      | Called during training to determine the loss and variables to train
+`__init()__`    | None        | The constructor for the `UserModel` class
+`inference()`   | Tensor      | Called during training and inference
+`loss()`        | Tensor      | Called during training to determine the loss and variables to train
 
 ### Tensors
 
-The network are fed with Tensorflow Tensor objects that are in [N, H, W, C] format.
+The network are fed with TensorFlow Tensor objects that are in [N, H, W, C] format.
 
-## Other Tensorflow Tools in DIGITS
+## Other TensorFlow Tools in DIGITS
 
-DIGITS provides a few useful tools to help with your development with Tensorflow.
+DIGITS provides a few useful tools to help with your development with TensorFlow.
 
 ### Provided Helpful Functions
 
-DIGITS provides a few helpful functions to help you with creating the model. Here are the functions we provide
+DIGITS provides a few helpful functions to help you with creating the model. Here are the functions we provide inside the `digits` class
 
 Function Name       | Parameters          | Description
 --------------------|---------------------|-------------
-classification_loss | pred - the images to be classified <br> y - the labels | Used for classification training to calculate the loss of image classification
-mse_loss            | lhs - left hand tensor <br> rhs - right hand tensor | Used for calculating the mean square loss between 2 tensors
-constrastive_loss   | lhs - left hand tensor <br> rhs - right hand tensor <br> y - labels | Calculates the contrastive loss with respect to the Caffe definition
-classification_accuracy | pred - the image to be classified <br> y - the labels | Used to measure how accurate the classification task is
-nhwc_to_nchw | x - the tensor to transpose | Transpose the tensor that was originally NHWC format to NCHW. The tensor must be a degree of 4
-nchw_to_nhwc | x - the tensor to transpose | Transpose the tensor that was originally NCHW format to NHWC. The tensor must be a degree of 4
-hwc_to_chw | x - the tensor to transpose | Transpose the tensor that was originally HWC format to CHW. The tensor must be a degree of 3
-chw_to_hwc | x - the tensor to transpose | Transpose the tensor that was originally CHW format to HWC. The tensor must be a degree of 3
-bgr_to_rgb | x - the tensor to transform | Transform the tensor that was originally in BGR channels to RGB.
-rgb_to_bgr | x - the tensor to transform | Transform the tensor that was originally in RGB channels to BGR.
+`classification_loss` | pred - the images to be classified <br> y - the labels | Used for classification training to calculate the loss of image classification
+`mse_loss`            | lhs - left hand tensor <br> rhs - right hand tensor | Used for calculating the mean square loss between 2 tensors
+`constrastive_loss`   | lhs - left hand tensor <br> rhs - right hand tensor <br> y - `labels` | Calculates the contrastive loss with respect to the Caffe definition
+`classification_accuracy` | pred - the image to be classified <br> y - the labels | Used to measure how accurate the classification task is
+`nhwc_to_nchw` | x - the tensor to transpose | Transpose the tensor that was originally NHWC format to NCHW. The tensor must be a degree of 4
+`nchw_to_nhwc` | x - the tensor to transpose | Transpose the tensor that was originally NCHW format to NHWC. The tensor must be a degree of 4
+`hwc_to_chw` | x - the tensor to transpose | Transpose the tensor that was originally HWC format to CHW. The tensor must be a degree of 3
+`chw_to_hwc` | x - the tensor to transpose | Transpose the tensor that was originally CHW format to HWC. The tensor must be a degree of 3
+`bgr_to_rgb` | x - the tensor to transform | Transform the tensor that was originally in BGR channels to RGB.
+`rgb_to_bgr` | x - the tensor to transform | Transform the tensor that was originally in RGB channels to BGR.
 
 ### Visualization With TensorBoard
 
 {insert image of tensorboard here}
 
-TensorBoard is a visualization tools provided by Tensorflow to see the graph of your neural network. DIGITS provides easy access to TensorBoard for your network while creating it. The TensorBoard can be accessed by clicking on the ```Visualize``` button under ```Custom Network``` as seen in the image below.
+TensorBoard is a visualization tools provided by TensorFlow to see the graph of your neural network. DIGITS provides easy access to TensorBoard for your network while creating it. The TensorBoard can be accessed by clicking on the ```Visualize``` button under ```Custom Network``` as seen in the image below.
 
 {insert image here}
 
@@ -202,7 +202,7 @@ class UserModel(Tower):
 
         # assuming the original model have weight2 and bias2 variables
         # in here, we renamed them by adding the suffix _not_in_use
-        # this tells Tensorflow that these variables in the pre-trained model should
+        # this tells TensorFlow that these variables in the pre-trained model should
         # not be retrained and it should be frozen
         # If we would like to freeze a weight, all we have to do is just rename it
         self.weights = {
