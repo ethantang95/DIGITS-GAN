@@ -46,7 +46,7 @@ class UserModel(Tower):
         return loss
 ```
 
-For example, this is what it looks like for LeNet:
+For example, this is what it looks like for [LeNet-5](http://yann.lecun.com/exdb/lenet/), a model that was created for the classification of hand written digits by Yann Lecun:
 
 ```python
 class UserModel(Tower):
@@ -143,7 +143,8 @@ To know more about how TensorBoard works, its official documentation is availabi
 
 ### Simple Auto-Encoder Network
 
-The following network is a simple auto encoder to demostate the structure of how to use tensorflow in DIGITS
+The following network is a simple auto encoder to demostate the structure of how to use tensorflow in DIGITS. An auto encoder is a 2 part network that basically acts as a compression mechanism. The first part will try to compress an image to a size smaller than original while the second part will try to decompress the compressed representation created by the compression network.
+
 ```python
 class UserModel(Tower):
 
@@ -191,6 +192,9 @@ class UserModel(Tower):
 ### Freezing Variables in Pre-Trained Models by Renaming
 
 The following is a demonstration of how to specifying which weights we would like to use for training. This works best if we are using a pre-trained model. This is applicable for fine tuning a model.
+
+When you originally train a model, tensorflow will save the variables with their specified names. When you reload the model to retrain it, tensorflow will simutainously reload all those variables and mark them available to retrain if they are specified in the model definition. When you change the name of the variables in the model, tensorflow will then know to not train that variable and thus "freezes" it.
+
 ```python
 class UserModel(Tower):
 
@@ -223,7 +227,3 @@ class UserModel(Tower):
         """code to calculate loss omitted"""
         return loss
 ```
-
-### Multi-GPU Training
-
-<WIP>

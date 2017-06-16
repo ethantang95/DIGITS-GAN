@@ -23,7 +23,7 @@ Along with that requirement, the following should be installed
 * A CUDA toolkit ([details and installation instructions](InstallCuda.md#cuda-toolkit))
 * cuDNN ([download page](https://developer.nvidia.com/cudnn))
 
-## Basic Installation
+## Installation
 
 These instructions are based on [the official TensorFlow instructions]
 (https://www.tensorflow.org/versions/master/install/)
@@ -34,10 +34,6 @@ pip install tensorflow-gpu=1.1.0
 ```
 
 TensorFlow should then install effortlessly and pull in all its required dependices.
-
-## Installation From Source
-
-If you would like to build TensorFlow from scratch, the instructions are available on [the official installation guide](https://www.tensorflow.org/versions/master/install/install_sources)
 
 ## Getting Started With TensorFlow In DIGITS
 
