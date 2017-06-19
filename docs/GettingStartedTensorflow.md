@@ -26,7 +26,7 @@ If DIGITS cannot enable tensorflow, a message will be printed in the console say
 
 Click on the "TensorFlow" tab on the model creation page
 
-{insert image here}
+![Select TensorFlow](images/Select_TensorFlow.png)
 
 ## Defining A TensorFlow Model In DIGITS
 
@@ -40,7 +40,7 @@ class UserModel(Tower):
         # Your code here
         return model
 
-    @model_property
+    @model_property#with tf.variable_scope(digits.GraphKeys.MODEL, reuse=None):
     def loss(self):
         # Your code here
         return loss
@@ -129,11 +129,11 @@ Function Name       | Parameters          | Description
 
 ### Visualization With TensorBoard
 
-{insert image of tensorboard here}
+![TensorBoard](images/TensorBoard.png)
 
 TensorBoard is a visualization tools provided by TensorFlow to see the graph of your neural network. DIGITS provides easy access to TensorBoard for your network while creating it. The TensorBoard can be accessed by clicking on the ```Visualize``` button under ```Custom Network``` as seen in the image below.
 
-{insert image here}
+![Visualize TensorBoard](images/visualize_button.png)
 
 If there is something wrong with the network model, DIGITS will automatically provide with you the stacktrace and the error message to help you understand where the problem is.
 
