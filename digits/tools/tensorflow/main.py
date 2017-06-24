@@ -260,7 +260,7 @@ def load_snapshot(sess, weight_path, var_candidates):
                     logging.info('NOT restoring %s -> %s' % (vm, vt.name))
 
     logging.info('Restoring %s variable ops.' % len(vars_restore))
-    tf.train.Saver(vars_restore, max_to_keep=0, sharded=FLAGwwwS.serving_export).restore(sess, weight_path)
+    tf.train.Saver(vars_restore, max_to_keep=0, sharded=FLAGS.serving_export).restore(sess, weight_path)
     logging.info('Variables restored.')
 
 
