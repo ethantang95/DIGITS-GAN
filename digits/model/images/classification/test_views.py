@@ -1157,6 +1157,7 @@ class TestCaffeLeNet(BaseTestCreated, test_utils.CaffeMixin):
             'standard-networks', 'caffe', 'lenet.prototxt')
     ).read()
 
+
 class TestCaffeLeNetADAMOptimizer(TestCaffeLeNet):
     OPTIMIZER = 'ADAM'
 
