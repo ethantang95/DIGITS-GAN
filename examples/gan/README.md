@@ -219,7 +219,7 @@ Now click `Test` and you will see a class sweep using the particular style that 
 
 ### Downloading the CelebA dataset
 
-The Celebrity Faces (a.k.a. "CelebA") dataset may be downloaded from this [Google Drive Account](https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg).
+The Celebrity Faces (a.k.a. "CelebA") dataset is available from this [location](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
 Download [img/img_align_celeba.zip](https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg) and [Anno/list_attr_celeba.txt](https://drive.google.com/drive/folders/0B7EVK8r0v71pOC0wOVZlQnFfaGs).
 Extract the ZIP file into a local folder.
 
