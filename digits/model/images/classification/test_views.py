@@ -174,6 +174,7 @@ class BaseViewsTestWithDataset(BaseViewsTest,
     AUG_HSV_H = None
     AUG_HSV_S = None
     AUG_HSV_V = None
+    OPTIMIZER = None
 
     @classmethod
     def setUpClass(cls):
@@ -242,6 +243,8 @@ class BaseViewsTestWithDataset(BaseViewsTest,
             data['aug_hsv_s'] = cls.AUG_HSV_S
         if cls.AUG_HSV_V is not None:
             data['aug_hsv_v'] = cls.AUG_HSV_V
+        if cls.OPTIMIZER is not None:
+            data['solver_type'] = cls.OPTIMIZER
 
         data.update(kwargs)
 
